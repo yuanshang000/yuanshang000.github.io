@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1680589745600">
+  <link rel="stylesheet" href="/css/style.css?v=1680669137712">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -56,9 +56,9 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div class="nexmoe-count-item"><span>文章</span>3 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
+        <div class="nexmoe-count-item"><span>文章</span>5 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
         <div class="nexmoe-count-item"><span>标签</span>3<div class="item-radius"></div><div class="item-radius item-right"></div></div>
-        <div class="nexmoe-count-item"><span>分类</span>3<div class="item-radius"></div><div class="item-radius item-right"></div></div>
+        <div class="nexmoe-count-item"><span>分类</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
@@ -159,6 +159,13 @@
         </li>
 
         
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/编程语言-方法/">编程语言 方法</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
       </ul>
 
     </div>
@@ -169,7 +176,7 @@
   
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
+      <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
     </div>
     
   </div>
@@ -179,7 +186,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -216,6 +223,70 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/05/String%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://shijuepi.com/uploads/allimg/201107/1-20110G63028.jpg" data-sizes="auto" alt="String方法" class="lazyload">
+                    <h1>String方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月05日</a>
+            <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
+        </div>
+        
+        <article>
+            
+                <p>String的创造（全部都是String类型）：<br>String( ) ——创建一个空白字符串对象<br>String(byte[ ] bys)——根据字节数组的内容，来创建字符串对象<br>String（char[ ] chs)——根据字符数组的内容，来创建字符串对象<br>String&#x3D;   ——直接赋值来创建字符串对象<br>和长度有关的方法 <br>length() ——得到一个字符串的字符个数 ——int</p>
+<p>和数组有关的方法</p>
+<p>getBytes() ——将一个字符串转换成字节数组——得到的是 byte[ ]<br>toCharArray()——将一个字符串转换成字符数组——得到的是char[ ]<br>split(“ “)——将字符串按照指定内容劈开——得到的是String[ ]<br>和判断有关的方法<br>equals(String)——判断两个字符串的内容是否一模一样——boolean<br>equalsIgnoreCase(String)——忽略大小写的比较两个字符串的内容是否一模一样——boolean</p>
+<p>contains(String)——判断一个字符串里面是否包含指定的内容——boolean<br>startsWith(String) —— 判断一个字符串是否以指定的内容开头——boolean<br>endsWith(String) ——判断一个字符串是否以指定的内容结尾——boolean</p>
+<p>和改变内容有关的方法<br>toUpperCase() ——将一个字符串全部转换成大写——String<br>toLowerCase()——将一个字符串全部转换成小写——String<br>replace(String,String) ——将某个内容全部替换成指定内容——String<br>replaceAll(String,String) ——将某个内容全部替换成指定内容，支持正则——String<br>repalceFirst(String,String) ——将第一次出现的某个内容替换成指定的内容——String<br>substring(int) ——从指定下标开始一直截取到字符串的最后——String<br>substring(int,int) ——从下标x截取到下标y-1对应的元素——String<br>trim() ——去除一个字符串的前后空格——String<br> 和位置有关的方法<br>charAt(int) ——得到指定下标位置对应的字符——char<br>indexOf(String)——得到指定内容第一次出现的下标——int<br>lastIndexOf(String)——得到指定内容最后一次出现的下标——int<br>由基本数据型态转换成String<br>1、String.valueOf(boolean b) : 将 boolean 变量 b 转换成字符串<br>2、String.valueOf(char c) : 将 char 变量 c 转换成字符串<br>3、String.valueOf(char[] data) : 将 char 数组 data 转换成字符串<br>4、String.valueOf(char[] data, int offset, int count) : 将 char 数组 data中由data[offset]开始取count个元素转换成字符串<br>5、String.valueOf(double d) : 将 double 变量 d 转换成字符串<br>6、String.valueOf(float f) : 将 float 变量 f 转换成字符串<br>7、String.valueOf(int i) : 将 int 变量 i 转换成字符串<br>8、String.valueOf(long l) : 将 long 变量 l 转换成字符串<br>9、String.valueOf(Object obj) : 将 obj 对象转换成 字符串, 等于 obj.toString()</p>
+<p>String 转换成 数字的基本数据型态<br>1、byte :     Byte.parseByte(String s) : 将 s 转换成 byte<br>2、byte :     Byte.parseByte(String s, int radix) : 以 radix 为基底 将 s 转换为 byte ，比如说 Byte.parseByte(“11”, 16) 会得到 17<br>3、double :   Double.parseDouble(String s) : 将 s 转换成 double<br>4、float :     Float.parseFloat(String s) : 将 s 转换成 float<br>5、int :      Integer.parseInt(String s) : 将 s 转换成 int<br>6、long :     Long.parseLong(String s)</p>
+<p>String与new String()的区别<br>JVM为了提升性能和减少内存开销，避免字符串的重复创建，维护了一块特殊的内存空间——字符串实例池。<br>String赋值的两种方式。<br>1、String str &#x3D; “test”;<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>如果存在，直接把实例池中”test”的地址返回给str。如果不存在，则会在实例池中创建”test”对象，并把该对象的地址返回给str。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/05/7bb1fbbb8c494f0581832810e1f016e9"><br>所以通过&#x3D;&#x3D;比较是，str1，str2指向的是同一地址，所以返回true；</p>
+<p>2、String str &#x3D; new String(“test”);<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>若不存在则会在实例池中创建”test”对象，同时在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。<br>若实例池存在则直接在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/05/85649fda37a049b48ab468dd28bfc776"></p>
+<p><img src="https://s1.vika.cn/space/2023/04/05/b2f95343617a485f855a9bb58899d443"></p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/05/Math%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://ts1.cn.mm.bing.net/th/id/R-C.b6f8fc05b5fc5773e2727cd4aa8e99c0?rik=G%2f%2f0F1v4oxuHCQ&riu=http%3a%2f%2fwx1.sinaimg.cn%2flarge%2f006DFKaTly1fqjwp6b2i7j30rs0rrwhp.jpg&ehk=hwPkbgu27VnnKz5DaMbR5sejG8eF7XJSaZyiMMSWMEE%3d&risl=&pid=ImgRaw&r=0" data-sizes="auto" alt="Math方法" class="lazyload">
+                    <h1>Math方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月05日</a>
+            <a><i class="nexmoefont icon-areachart"></i>819 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+        
+        <article>
+            
+                <p>Math.E —— e —— 2.718281828<br>Math.PI —— 圆周率——3.1415926<br>Math.abs() ——计算绝对值<br>Math.cos()——求余弦<br>Math.sin()——求正弦<br>Math.tan()——求正切<br>Math.acos()——求反余弦<br>Math.asin()——求反正弦<br>Math.atan()——求反正切<br>Math.atan2(y,x)——求向量(x,y)与x轴夹角<br>Math.cosh()——计算值的双曲余弦<br>Math.sinh()——计算双曲正弦<br>Math.tanh()——计算双曲正切<br>Math.cbrt()——开立方根<br>Math.sqrt(x)——开平方<br>Math.hypot(x,y)——求sqrt(x<em>x+y</em>y)——在求两点间距离时有用sqrt((x1-x2)^2+(y1-y2)^2)<br>Math.ceil()——天花板，向上取整，返回大的值<br>Math.floor() ——地板，向下取整，返回小的值<br>Math.cosh()——返回 double 值的双曲线余弦。x 的双曲线余弦的定义是 (ex + e-x)&#x2F;2，其中 e 是欧拉数<br>Math. exp(x)——返回e^x的值<br>Math. expm1(x) ——返回e^x - 1的值<br>Math.pow(x,y)——返回x^y的值——x,y只能是double型<br>Math..log(a) ——a的自然对数(底数是e)——只能穿double型并返回double型<br>Math.log10(a) ——a 的底数为10的对数——只能穿double型并返回double型<br>Math.log1p(a)—— a+1的自然对数——只能穿double型并返回double型<br>Math.max(x,y)——求最大值<br>Math.min(x,y)——求最小值<br>Math.nextAfter()——返回与第二个参数方向相邻的第一个参数的浮点数。<br>Math.nextUp(d)——返回与正无穷大方向相邻的 d的浮点值<br>Math.Random()——函数能够返回带正号的double值，取值范围是[0.0,1.0)<br>Math.rint(x)——x取整为它最接近的整数，如果x与两个整数的距离相等，则返回其中为偶数的那一个。<br>Math.round(x)——返回“四舍五入”值。</p>
+<p>Math.scalb(double d, int scaleFactor)——返回 f ×2scaleFactor，其舍入方式如同将一个正确舍入的浮点值乘以 float</p>
+<ul>
+<li>值集合中的一个值</li>
+<li>返回 d 和正无穷大之间与 d 相邻的浮点值 tatic double   nextUp(double d)<br>Math.scalb(float f, int scaleFactor)——返回 f 和正无穷大之间与 f 相邻的浮点值 tatic float    nextUp(float f)——返回第一个参数和第二个参数之间与第一个参数相邻的浮点数<br>Math.signum（）——方法返回指定int值的符号函数（如果指定值为负，则返回-1；如果指定值为零，则返回 0；如果指定值为正，则返回1<br>Math.toDegrees()——将弧度转换角度<br>Math.toRadians()——将角度转换为弧度<br>Math.addExact()——求和，如果结果溢出取值范围，则引发异常<br>Math.substractExact()方法——返回两个参数之差，结果溢出时抛出ArithmeticException<br>Math.incrementExact() 方法 ——返回参数值加一，结果溢出时抛出ArithmeticException<br>Math.decrementExact() 方法 ——返回参数值减一，结果溢出时抛出ArithmeticException<br> Math.multiplyExact() 方法 ——返回两个参数之积，结果溢出时抛出ArithmeticException<br>Math.negateExact() 方法—— 改变参数符号，结果溢出时抛出ArithmeticException<br>Math.floorDiv(1,2)——第一个参数除以第二参数，然后针对结果执行floor操作，返回小于或等于商的整数<br>Math.floorMod()——如果参数的符号相同，则floorMod和％运算符的结果是相同的——如果参数的符号不同，则结果与％运算符不同<br>Math.toIntExact()——long转int<br>Math.nextDown()——返回与负无穷大方向相邻的 f的浮点值。<br> Math.ulp()——。。。</li>
+</ul>
+<p>原网址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ZMYHH323/article/details/90112551">https://blog.csdn.net/ZMYHH323/article/details/90112551</a></p>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2023/04/02/%E5%9B%BE%E6%96%87%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/">
@@ -1004,7 +1075,7 @@
 <script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
 
 
-<script src="/js/app.js?v=1680589745600"></script>
+<script src="/js/app.js?v=1680669137712"></script>
 
 <script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -1021,6 +1092,8 @@
 
 
 <!-- hexo injector body_end start -->
+<script src="/js/clock.js"></script>
+
 <script src="https://lib.baomitu.com/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script src="/lib/codeBlock/codeBlockFuction.js"></script>
@@ -1032,8 +1105,6 @@
 <script src="/lib/codeBlock/codeShrink.js"></script>
 
 <link rel="stylesheet" href="/lib/codeBlock/matery.css">
-
-<script src="/js/clock.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
