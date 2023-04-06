@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1680669137707">
+  <link rel="stylesheet" href="/css/style.css?v=1680759671694">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -56,8 +56,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div class="nexmoe-count-item"><span>文章</span>5 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
-        <div class="nexmoe-count-item"><span>标签</span>3<div class="item-radius"></div><div class="item-radius item-right"></div></div>
+        <div class="nexmoe-count-item"><span>文章</span>6 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
+        <div class="nexmoe-count-item"><span>标签</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
         <div class="nexmoe-count-item"><span>分类</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -162,7 +162,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/编程语言-方法/">编程语言 方法</a>
-          <span class="category-list-count">2</span>
+          <span class="category-list-count">3</span>
         </li>
 
         
@@ -176,7 +176,7 @@
   
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
+      <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
     </div>
     
   </div>
@@ -186,7 +186,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -225,6 +225,50 @@
         <section class="nexmoe-posts">
     
     <div class="nexmoe-post">
+        <a href="/2023/04/06/StringBuffer%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://pic2.zhimg.com/v2-ac1dc129d4f18efc871da134186db6fe_r.jpg?source=1940ef5c" data-sizes="auto" alt="StringBuffer方法" class="lazyload">
+                    <h1>StringBuffer方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月06日</a>
+            <a><i class="nexmoefont icon-areachart"></i>741 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+        
+        <article>
+            
+                <p>StringBuffer是字符串缓存区,当new的时候是在堆内存创建了一个对象,底层是一个长度为16的<br>字符数组当调用添加的方法时,不会再重新创建对象,在不断向原缓冲区添加字符</p>
+<h1 id="查看字符串缓存区容量和长度（字符数）——capacity-x2F-length"><a href="#查看字符串缓存区容量和长度（字符数）——capacity-x2F-length" class="headerlink" title="查看字符串缓存区容量和长度（字符数）——capacity&#x2F;length"></a>查看字符串缓存区容量和长度（字符数）——capacity&#x2F;length</h1><p>StringBuffer x1 &#x3D; new StringBuffer();<br>System.out.println(x1.length());     &#x2F;&#x2F;容器中的字符个数,实际值<br>System.out.println(x1.capacity());   &#x2F;&#x2F;容器的初始容量,理论值</p>
+<h1 id="字符串缓存区——添加（append）"><a href="#字符串缓存区——添加（append）" class="headerlink" title="字符串缓存区——添加（append）"></a>字符串缓存区——添加（append）</h1><p>可以把任意类型数据添加到字符串缓冲区里面,并返回字符串缓冲区本身</p>
+<p>StringBuffer类中重写了toString方法,显示的是对象中的属性值</p>
+<p>StringBuffer x &#x3D; new StringBuffer();<br>x.append(“hello “);<br>x.append(“the “);<br>x.append(“world”);<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——插入（insert）"><a href="#字符串缓存区——插入（insert）" class="headerlink" title="字符串缓存区——插入（insert）"></a>字符串缓存区——插入（insert）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>x.insert(2,”ss”);  &#x2F;&#x2F;在指定位置添加元素<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——替换（replace）"><a href="#字符串缓存区——替换（replace）" class="headerlink" title="字符串缓存区——替换（replace）"></a>字符串缓存区——替换（replace）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>x.replace(3,5,”cc”);&#x2F;&#x2F;替换指定位置字符串（左闭右开）<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——反转（reverse）"><a href="#字符串缓存区——反转（reverse）" class="headerlink" title="字符串缓存区——反转（reverse）"></a>字符串缓存区——反转（reverse）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>System.out.println(x.reverse()); &#x2F;&#x2F;反转字符串</p>
+<h1 id="字符串缓存区——截取（substring）"><a href="#字符串缓存区——截取（substring）" class="headerlink" title="字符串缓存区——截取（substring）"></a>字符串缓存区——截取（substring）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>System.out.println(x.substring(2,6));&#x2F;&#x2F;截取字符串</p>
+<h1 id="字符串缓存区——删除"><a href="#字符串缓存区——删除" class="headerlink" title="字符串缓存区——删除"></a>字符串缓存区——删除</h1><h2 id="删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete"><a href="#删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete" class="headerlink" title="删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete"></a>删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete</h2><p>StringBuffer sb &#x3D; new StringBuffer(“hello”);<br>System.out.println(sb.delete(1,2));</p>
+<h2 id="根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt"><a href="#根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt" class="headerlink" title="根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt"></a>根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt</h2><p>StringBuffer sb &#x3D; new StringBuffer(“hello”);<br>System.out.println(sb.deleteCharAt(4));</p>
+<h1 id="字符串缓存区——清空"><a href="#字符串缓存区——清空" class="headerlink" title="字符串缓存区——清空"></a>字符串缓存区——清空</h1><p>方法一：（推荐）<br>StringBuffer x &#x3D; new StringBuffer(“hello”);<br>System.out.println(x.length());<br>System.out.println(x.capacity());<br>x.delete(0,x.length());  &#x2F;&#x2F;清空缓存区<br>System.out.println(x.length());<br>System.out.println(x.capacity());</p>
+<p>方法二：<br>&#x2F;&#x2F;方式二:不建议这种方式清空缓存区，原来的会变成垃圾，浪费内存<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>x1 &#x3D; new StringBuffer();<br>System.out.println(x1.length());<br>System.out.println(x1.capacity());<br>StringBuffer和String相互转换</p>
+<h1 id="StringBuffer转换成String"><a href="#StringBuffer转换成String" class="headerlink" title="StringBuffer转换成String"></a>StringBuffer转换成String</h1><p>通过构造方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x2 &#x3D; new String(x1);<br>System.out.println(x2);</p>
+<p>通过toString方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x3 &#x3D; x1.toString();<br>System.out.println(x3);</p>
+<p>通过截取字符串方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x4 &#x3D; x1.substring(0,x1.length());<br>System.out.println(x4);<br>String转化成StringBuffer</p>
+<p>通过构造方法<br>StringBuffer s1 &#x3D; new StringBuffer(“help”);<br>System.out.println(s1);</p>
+<p>通过append方法<br>StringBuffer s2 &#x3D; new StringBuffer();<br>s2.append(“help”);<br>System.out.println(s2);</p>
+<h1 id="当做参数传递时，String和StringBuffer区别"><a href="#当做参数传递时，String和StringBuffer区别" class="headerlink" title="当做参数传递时，String和StringBuffer区别"></a>当做参数传递时，String和StringBuffer区别</h1><p>当做参数传递时原则：基本数据类型的值传递,不改变其值；引用数据类型的值传递,改变其值</p>
+<p>String类虽然是引用数据类型,但是他当作参数传递时和基本数据类型是一样的，不改变其值</p>
+<p>StringBuffer作为参数传递,改变其值</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
         <a href="/2023/04/05/String%E6%96%B9%E6%B3%95/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
@@ -242,13 +286,15 @@
         
         <article>
             
-                <p>String的创造（全部都是String类型）：<br>String( ) ——创建一个空白字符串对象<br>String(byte[ ] bys)——根据字节数组的内容，来创建字符串对象<br>String（char[ ] chs)——根据字符数组的内容，来创建字符串对象<br>String&#x3D;   ——直接赋值来创建字符串对象<br>和长度有关的方法 <br>length() ——得到一个字符串的字符个数 ——int</p>
-<p>和数组有关的方法</p>
-<p>getBytes() ——将一个字符串转换成字节数组——得到的是 byte[ ]<br>toCharArray()——将一个字符串转换成字符数组——得到的是char[ ]<br>split(“ “)——将字符串按照指定内容劈开——得到的是String[ ]<br>和判断有关的方法<br>equals(String)——判断两个字符串的内容是否一模一样——boolean<br>equalsIgnoreCase(String)——忽略大小写的比较两个字符串的内容是否一模一样——boolean</p>
-<p>contains(String)——判断一个字符串里面是否包含指定的内容——boolean<br>startsWith(String) —— 判断一个字符串是否以指定的内容开头——boolean<br>endsWith(String) ——判断一个字符串是否以指定的内容结尾——boolean</p>
-<p>和改变内容有关的方法<br>toUpperCase() ——将一个字符串全部转换成大写——String<br>toLowerCase()——将一个字符串全部转换成小写——String<br>replace(String,String) ——将某个内容全部替换成指定内容——String<br>replaceAll(String,String) ——将某个内容全部替换成指定内容，支持正则——String<br>repalceFirst(String,String) ——将第一次出现的某个内容替换成指定的内容——String<br>substring(int) ——从指定下标开始一直截取到字符串的最后——String<br>substring(int,int) ——从下标x截取到下标y-1对应的元素——String<br>trim() ——去除一个字符串的前后空格——String<br> 和位置有关的方法<br>charAt(int) ——得到指定下标位置对应的字符——char<br>indexOf(String)——得到指定内容第一次出现的下标——int<br>lastIndexOf(String)——得到指定内容最后一次出现的下标——int<br>由基本数据型态转换成String<br>1、String.valueOf(boolean b) : 将 boolean 变量 b 转换成字符串<br>2、String.valueOf(char c) : 将 char 变量 c 转换成字符串<br>3、String.valueOf(char[] data) : 将 char 数组 data 转换成字符串<br>4、String.valueOf(char[] data, int offset, int count) : 将 char 数组 data中由data[offset]开始取count个元素转换成字符串<br>5、String.valueOf(double d) : 将 double 变量 d 转换成字符串<br>6、String.valueOf(float f) : 将 float 变量 f 转换成字符串<br>7、String.valueOf(int i) : 将 int 变量 i 转换成字符串<br>8、String.valueOf(long l) : 将 long 变量 l 转换成字符串<br>9、String.valueOf(Object obj) : 将 obj 对象转换成 字符串, 等于 obj.toString()</p>
-<p>String 转换成 数字的基本数据型态<br>1、byte :     Byte.parseByte(String s) : 将 s 转换成 byte<br>2、byte :     Byte.parseByte(String s, int radix) : 以 radix 为基底 将 s 转换为 byte ，比如说 Byte.parseByte(“11”, 16) 会得到 17<br>3、double :   Double.parseDouble(String s) : 将 s 转换成 double<br>4、float :     Float.parseFloat(String s) : 将 s 转换成 float<br>5、int :      Integer.parseInt(String s) : 将 s 转换成 int<br>6、long :     Long.parseLong(String s)</p>
-<p>String与new String()的区别<br>JVM为了提升性能和减少内存开销，避免字符串的重复创建，维护了一块特殊的内存空间——字符串实例池。<br>String赋值的两种方式。<br>1、String str &#x3D; “test”;<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>如果存在，直接把实例池中”test”的地址返回给str。如果不存在，则会在实例池中创建”test”对象，并把该对象的地址返回给str。</p>
+                <h1 id="String的创造（全部都是String类型）："><a href="#String的创造（全部都是String类型）：" class="headerlink" title="String的创造（全部都是String类型）："></a>String的创造（全部都是String类型）：</h1><p>String( ) ——创建一个空白字符串对象<br>String(byte[ ] bys)——根据字节数组的内容，来创建字符串对象<br>String（char[ ] chs)——根据字符数组的内容，来创建字符串对象<br>String&#x3D;   ——直接赋值来创建字符串对象<br>和长度有关的方法 <br>length() ——得到一个字符串的字符个数 ——int</p>
+<h1 id="和数组有关的方法"><a href="#和数组有关的方法" class="headerlink" title="和数组有关的方法"></a>和数组有关的方法</h1><p>getBytes() ——将一个字符串转换成字节数组——得到的是 byte[ ]<br>toCharArray()——将一个字符串转换成字符数组——得到的是char[ ]<br>split(“ “)——将字符串按照指定内容劈开——得到的是String[ ]</p>
+<h1 id="和判断有关的方法"><a href="#和判断有关的方法" class="headerlink" title="和判断有关的方法"></a>和判断有关的方法</h1><p>equals(String)——判断两个字符串的内容是否一模一样——boolean<br>equalsIgnoreCase(String)——忽略大小写的比较两个字符串的内容是否一模一样——boolean<br>contains(String)——判断一个字符串里面是否包含指定的内容——boolean<br>startsWith(String) —— 判断一个字符串是否以指定的内容开头——boolean<br>endsWith(String) ——判断一个字符串是否以指定的内容结尾——boolean</p>
+<h1 id="和改变内容有关的方法"><a href="#和改变内容有关的方法" class="headerlink" title="和改变内容有关的方法"></a>和改变内容有关的方法</h1><p>toUpperCase() ——将一个字符串全部转换成大写——String<br>toLowerCase()——将一个字符串全部转换成小写——String<br>replace(String,String) ——将某个内容全部替换成指定内容——String<br>replaceAll(String,String) ——将某个内容全部替换成指定内容，支持正则——String<br>repalceFirst(String,String) ——将第一次出现的某个内容替换成指定的内容——String<br>substring(int) ——从指定下标开始一直截取到字符串的最后——String<br>substring(int,int) ——从下标x截取到下标y-1对应的元素——String<br>trim() ——去除一个字符串的前后空格——String          </p>
+<h1 id="和位置有关的方法"><a href="#和位置有关的方法" class="headerlink" title="和位置有关的方法"></a>和位置有关的方法</h1><p>charAt(int) ——得到指定下标位置对应的字符——char<br>indexOf(String)——得到指定内容第一次出现的下标——int<br>lastIndexOf(String)——得到指定内容最后一次出现的下标——int </p>
+<h2 id="由基本数据型态转换成String"><a href="#由基本数据型态转换成String" class="headerlink" title="由基本数据型态转换成String"></a>由基本数据型态转换成String</h2><p>1、String.valueOf(boolean b) : 将 boolean 变量 b 转换成字符串<br>2、String.valueOf(char c) : 将 char 变量 c 转换成字符串<br>3、String.valueOf(char[] data) : 将 char 数组 data 转换成字符串<br>4、String.valueOf(char[] data, int offset, int count) : 将 char 数组 data中由data[offset]开始取count个元素转换成字符串<br>5、String.valueOf(double d) : 将 double 变量 d 转换成字符串<br>6、String.valueOf(float f) : 将 float 变量 f 转换成字符串<br>7、String.valueOf(int i) : 将 int 变量 i 转换成字符串<br>8、String.valueOf(long l) : 将 long 变量 l 转换成字符串<br>9、String.valueOf(Object obj) : 将 obj 对象转换成 字符串, 等于 obj.toString()</p>
+<h1 id="String-转换成-数字的基本数据型态"><a href="#String-转换成-数字的基本数据型态" class="headerlink" title="String 转换成 数字的基本数据型态"></a>String 转换成 数字的基本数据型态</h1><p>1、byte :     Byte.parseByte(String s) : 将 s 转换成 byte<br>2、byte :     Byte.parseByte(String s, int radix) : 以 radix 为基底 将 s 转换为 byte ，比如说 Byte.parseByte(“11”, 16) 会得到 17<br>3、double :   Double.parseDouble(String s) : 将 s 转换成 double<br>4、float :     Float.parseFloat(String s) : 将 s 转换成 float<br>5、int :      Integer.parseInt(String s) : 将 s 转换成 int<br>6、long :     Long.parseLong(String s)</p>
+<h1 id="String与new-String-的区别"><a href="#String与new-String-的区别" class="headerlink" title="String与new String()的区别"></a>String与new String()的区别</h1><p>JVM为了提升性能和减少内存开销，避免字符串的重复创建，维护了一块特殊的内存空间——字符串实例池。<br>String赋值的两种方式。</p>
+<p>1、String str &#x3D; “test”;<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>如果存在，直接把实例池中”test”的地址返回给str。如果不存在，则会在实例池中创建”test”对象，并把该对象的地址返回给str。</p>
 <p><img src="https://s1.vika.cn/space/2023/04/05/7bb1fbbb8c494f0581832810e1f016e9"><br>所以通过&#x3D;&#x3D;比较是，str1，str2指向的是同一地址，所以返回true；</p>
 <p>2、String str &#x3D; new String(“test”);<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>若不存在则会在实例池中创建”test”对象，同时在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。<br>若实例池存在则直接在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。</p>
 <p><img src="https://s1.vika.cn/space/2023/04/05/85649fda37a049b48ab468dd28bfc776"></p>
@@ -1003,7 +1049,7 @@
 <script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
 
 
-<script src="/js/app.js?v=1680669137708"></script>
+<script src="/js/app.js?v=1680759671695"></script>
 
 <script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -1034,11 +1080,11 @@
 
 <link rel="stylesheet" href="/lib/codeBlock/matery.css">
 
+<script src="/js/webapp.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 <script src="/js/search.js"></script>
-
-<script src="/js/webapp.js"></script>
 <!-- hexo injector body_end end --></body>
 </html>
 
