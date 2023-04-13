@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1681364325660">
+  <link rel="stylesheet" href="/css/style.css?v=1681373663345">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -56,7 +56,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div class="nexmoe-count-item"><span>文章</span>9 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
+        <div class="nexmoe-count-item"><span>文章</span>10 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
         <div class="nexmoe-count-item"><span>标签</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
         <div class="nexmoe-count-item"><span>分类</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
     </div>
@@ -141,7 +141,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/java编程方法/">java编程方法</a>
-          <span class="category-list-count">5</span>
+          <span class="category-list-count">6</span>
         </li>
 
         
@@ -176,7 +176,7 @@
   
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
+      <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
     </div>
     
   </div>
@@ -186,7 +186,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">9</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">10</span></li></ul>
     </div>
   </div>
 
@@ -223,6 +223,75 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/13/ArrayList%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://pic3.zhimg.com/v2-1ae2c665000451c000c43638d6459906_r.jpg" data-sizes="auto" alt="ArrayList方法" class="lazyload">
+                    <h1>ArrayList方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月13日</a>
+            <a><i class="nexmoefont icon-areachart"></i>844 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
+        </div>
+        
+        <article>
+            
+                <h1 id="Arraylist是什么？"><a href="#Arraylist是什么？" class="headerlink" title="Arraylist是什么？"></a>Arraylist是什么？</h1><p>ArrayList 类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，我们可以添加或删除元素。ArrayList 继承了 AbstractList ，并实现了 List 接口。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/642deceac3e1451ebbbf980d98a4a1c8"></p>
+<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下："><a href="#1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下：" class="headerlink" title="1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下："></a>1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下：</h2><p>代码如下（示例）：</p>
+<p>import java.util.ArrayList; &#x2F;&#x2F; 引入 ArrayList 类</p>
+<p>ArrayList<E> objectName &#x3D;new ArrayList&lt;&gt;();　 &#x2F;&#x2F; 初始化<br>E: 泛型数据类型，用于设置 objectName 的数据类型，只能为引用数据类型。<br>objectName: 对象名</p>
+<h1 id="2-添加元素"><a href="#2-添加元素" class="headerlink" title="2.添加元素"></a>2.添加元素</h1><p>ArrayList 类提供了很多有用的方法，添加元素到 ArrayList 可以使用 add() 方法 。 添加并遍历元素如下</p>
+<p>package Demo;</p>
+<p>import java.util.ArrayList;</p>
+<p>public class DemoArraylistEach {<br>    public static void main(String[] args) {<br>        ArrayList list &#x3D; new ArrayList();<br>        list.add(“迪丽热巴”);<br>        list.add(“古力娜扎”);<br>        list.add(“马儿扎哈”);<br>        System.out.println(list);<br>        for (int i &#x3D; 0; i &lt; list.size(); i++) {<br>            System.out.println(list.get(i));<br>        }<br>    }<br>}</p>
+<p>输出结果为如下</p>
+<p>[迪丽热巴, 古力娜扎, 马儿扎哈]<br>迪丽热巴<br>古力娜扎<br>马儿扎哈</p>
+<h1 id="3-删除元素"><a href="#3-删除元素" class="headerlink" title="3.删除元素"></a>3.删除元素</h1><p>如果要删除 ArrayList 中的元素可以使用 remove() 方法：</p>
+<p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        sites.remove(3); &#x2F;&#x2F; 删除第四个元素<br>        System.out.println(sites);<br>    }<br>}<br>以上实例，执行输出结果为：</p>
+<p>[Google, Runoob, Taobao]</p>
+<h1 id="4-计算大小"><a href="#4-计算大小" class="headerlink" title="4.计算大小"></a>4.计算大小</h1><p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        System.out.println(sites.size());<br>    }<br>}<br>以上实例，执行输出结果为：</p>
+<p>4</p>
+<h1 id="5-其他的引用类型"><a href="#5-其他的引用类型" class="headerlink" title="5.其他的引用类型"></a>5.其他的引用类型</h1><p>ArrayList 中的元素实际上是对象，在以上实例中，数组列表元素都是字符串 String 类型。</p>
+<p>如果我们要存储其他类型，而 <E> 只能为引用数据类型，这时我们就需要使用到基本类型的包装类。</p>
+<p>基本类型对应的包装类表如下：</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/2e347c9ba9e4481fa34e5f620d9dafeb"></p>
+<p>此外，BigInteger、BigDecimal 用于高精度的运算，BigInteger 支持任意精度的整数，也是引用类型，但它们没有相对应的基本类型。</p>
+<p>rrayList<Integer> li&#x3D;new Arraylist&lt;&gt;();     &#x2F;&#x2F; 存放整数元素<br>ArrayList<Character> li&#x3D;new Arraylist&lt;&gt;();   &#x2F;&#x2F; 存放字符元素<br>以下实例使用 ArrayList 存储数字(使用 Integer 类型):</p>
+<p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(10);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(25);<br>        for (int i : myNumbers) {<br>            System.out.println(i);<br>        }<br>    }<br>}<br> 以下是输出结果</p>
+<p>10<br>15<br>20<br>25</p>
+<h1 id="ArrayList-排序"><a href="#ArrayList-排序" class="headerlink" title="ArrayList 排序"></a>ArrayList 排序</h1><p>Collections 类也是一个非常有用的类，位于 java.util 包中，提供的 sort() 方法可以对字符或数字列表进行排序。</p>
+<p>以下实例对字母进行排序：</p>
+<p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Taobao”);<br>        sites.add(“Wiki”);<br>        sites.add(“Runoob”);<br>        sites.add(“Weibo”);<br>        sites.add(“Google”);<br>        Collections.sort(sites);  &#x2F;&#x2F; 字母排序<br>        for (String i : sites) {<br>            System.out.println(i);<br>        }<br>    }<br>}</p>
+<p>执行结果</p>
+<p>Google<br>Runoob<br>Taobao<br>Weibo<br>Wiki<br>以下实例对数字进行排序：</p>
+<p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(33);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(34);<br>        myNumbers.add(8);<br>        myNumbers.add(12);</p>
+<pre><code>    Collections.sort(myNumbers);  // 数字排序
+
+    for (int i : myNumbers) &#123;
+        System.out.println(i);
+    &#125;
+&#125;
+</code></pre>
+<p>}</p>
+<p>执行结果</p>
+<p>8<br>12<br>15<br>20<br>33<br>34</p>
+<h1 id="Java-ArrayList-方法"><a href="#Java-ArrayList-方法" class="headerlink" title="Java ArrayList 方法"></a>Java ArrayList 方法</h1><p>Java ArrayList 常用方法列表如下：<br><img src="https://s1.vika.cn/space/2023/04/13/75460106d7b64681a8cb681ad7737f30"></p>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2023/04/12/Integer%E6%96%B9%E6%B3%95/">
@@ -1305,7 +1374,7 @@
 <script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
 
 
-<script src="/js/app.js?v=1681364325661"></script>
+<script src="/js/app.js?v=1681373663346"></script>
 
 <script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -1324,6 +1393,10 @@
 <!-- hexo injector body_end start -->
 <script src="/js/clock.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script src="/js/search.js"></script>
+
 <script src="https://lib.baomitu.com/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script src="/lib/codeBlock/codeBlockFuction.js"></script>
@@ -1337,10 +1410,6 @@
 <link rel="stylesheet" href="/lib/codeBlock/matery.css">
 
 <script src="/js/webapp.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-<script src="/js/search.js"></script>
 <!-- hexo injector body_end end --></body>
 </html>
 
