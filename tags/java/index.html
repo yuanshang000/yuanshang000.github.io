@@ -5,7 +5,7 @@
 <head>
   
   <meta name="baidu-site-verification" content="code-J1Qg17G6wT" />
-  <title>标签：java - 源殇</title>
+  <title>标签：Java - 源殇</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -18,7 +18,7 @@
   <link rel="shortcut icon" href="/images/head/head.jpg" type="image/png" />
   <meta property="og:type" content="website">
 <meta property="og:title" content="源殇">
-<meta property="og:url" content="http://example.com/tags/java/index.html">
+<meta property="og:url" content="http://example.com/tags/Java/index.html">
 <meta property="og:site_name" content="源殇">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="源殇">
@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1694704557388">
+  <link rel="stylesheet" href="/css/style.css?v=1694704895196">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -205,90 +205,619 @@
         <section class="nexmoe-posts">
     
     <div class="nexmoe-post">
-        <a href="/2023/04/05/String%E6%96%B9%E6%B3%95/">
+        <a href="/2023/04/13/Scanner%E7%B1%BB/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
-                    <img data-src="https://shijuepi.com/uploads/allimg/201107/1-20110G63028.jpg" data-sizes="auto" alt="String方法" class="lazyload">
-                    <h1>String方法</h1>
+                    <img data-src="https://tupian.qqw21.com/article/UploadPic/2021-8/202182123121991046.jpg" data-sizes="auto" alt="Scanner类" class="lazyload">
+                    <h1>Scanner类</h1>
                 </div>
             
         </a>
         
         <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月05日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月13日</a>
+            <a><i class="nexmoefont icon-areachart"></i>2.8k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 13 分钟</a>
+        </div>
+        
+        <article>
+            
+                <h1 id="Scanner类的简介"><a href="#Scanner类的简介" class="headerlink" title="Scanner类的简介"></a>Scanner类的简介</h1><p>Scanner类主要用于扫描用户从控制台输入的文本。</p>
+<h1 id="Scanner类的常用方法"><a href="#Scanner类的常用方法" class="headerlink" title="Scanner类的常用方法"></a>Scanner类的常用方法</h1><h1 id="一、nextxxx"><a href="#一、nextxxx" class="headerlink" title="一、nextxxx"></a>一、nextxxx</h1><h2 id="next"><a href="#next" class="headerlink" title="next()"></a>next()</h2><p>获取输入的字符串；<br>不仅接受键盘输入的内容，还进行分割；<br>默认的分隔符为空格，以回车Enter为结束符，回车enter后的内容则放入缓冲区。</p>
+<h2 id="nextLine"><a href="#nextLine" class="headerlink" title="nextLine()"></a>nextLine()</h2><p>获取输入的字符串；<br>可以加空格，以回车Enter为结束符；<br>可以获得空白。<br>代码实例1</p>
+<p>&#x2F;&#x2F; next() &amp;&amp; nextLine()<br>System.out.println(“请输入一个字符串nextLine():”);<br>String str1 &#x3D; input.nextLine();<br>System.out.println(str1);</p>
+<p>System.out.println(“请输入一个字符串next():”);<br>String str2 &#x3D; input.next();<br>System.out.println(str2);<br> 输出结果1</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/d495248b987e41939038306048dff5e7"></p>
+<h2 id="nextBigDecimal-：获取输入的BigDecimal类型的数字"><a href="#nextBigDecimal-：获取输入的BigDecimal类型的数字" class="headerlink" title="nextBigDecimal()：获取输入的BigDecimal类型的数字"></a>nextBigDecimal()：获取输入的BigDecimal类型的数字</h2><h2 id="nextBigInteger-：获取输入的BigInteger类型的数字"><a href="#nextBigInteger-：获取输入的BigInteger类型的数字" class="headerlink" title="nextBigInteger()：获取输入的BigInteger类型的数字"></a>nextBigInteger()：获取输入的BigInteger类型的数字</h2><h2 id="nextBoolean-：获取输入的Boolean类型，即true和false"><a href="#nextBoolean-：获取输入的Boolean类型，即true和false" class="headerlink" title="nextBoolean()：获取输入的Boolean类型，即true和false"></a>nextBoolean()：获取输入的Boolean类型，即true和false</h2><h2 id="nextByte-：获取输入的Byte类型的数字"><a href="#nextByte-：获取输入的Byte类型的数字" class="headerlink" title="nextByte()：获取输入的Byte类型的数字"></a>nextByte()：获取输入的Byte类型的数字</h2><h2 id="nextDouble-：获取输入的Double类型的数字"><a href="#nextDouble-：获取输入的Double类型的数字" class="headerlink" title="nextDouble()：获取输入的Double类型的数字"></a>nextDouble()：获取输入的Double类型的数字</h2><h2 id="nextFloat-：获取输入的Float类型的数字"><a href="#nextFloat-：获取输入的Float类型的数字" class="headerlink" title="nextFloat()：获取输入的Float类型的数字"></a>nextFloat()：获取输入的Float类型的数字</h2><h2 id="nextInt-：获取输入的Int类型的数字"><a href="#nextInt-：获取输入的Int类型的数字" class="headerlink" title="nextInt()：获取输入的Int类型的数字"></a>nextInt()：获取输入的Int类型的数字</h2><h2 id="nextLong-：获取输入的Long类型的数字"><a href="#nextLong-：获取输入的Long类型的数字" class="headerlink" title="nextLong()：获取输入的Long类型的数字"></a>nextLong()：获取输入的Long类型的数字</h2><h2 id="nextShort-：获取输入的Short类型的数字"><a href="#nextShort-：获取输入的Short类型的数字" class="headerlink" title="nextShort()：获取输入的Short类型的数字"></a>nextShort()：获取输入的Short类型的数字</h2><p>代码实例2</p>
+<p>Scanner input &#x3D; new Scanner(System.in);</p>
+<p>&#x2F;* nextxxx() *&#x2F;<br>&#x2F;&#x2F; next() &amp;&amp; nextLine()<br>System.out.println(“请输入一个字符串nextLine():”);<br>String str1 &#x3D; input.nextLine();<br>System.out.println(str1);</p>
+<p>System.out.println(“请输入一个字符串next():”);<br>String str2 &#x3D; input.next();<br>System.out.println(str2);</p>
+<p>&#x2F;&#x2F; nextBigDecimal()<br>System.out.println(“请输入一个BigDecimal类型的数字”);<br>BigDecimal bd;<br>bd &#x3D; input.nextBigDecimal();<br>System.out.println(bd);</p>
+<p>&#x2F;&#x2F; nextBigInteger()<br>System.out.println(“请输入一个BigInteger类型的数字”);<br>BigInteger bi;<br>bi &#x3D; input.nextBigInteger();<br>System.out.println(bi);</p>
+<p>&#x2F;&#x2F; nextBoolean()<br>System.out.println(“请输入一个Boolean类型”);<br>boolean bl;<br>bl &#x3D; input.nextBoolean();<br>System.out.println(bl);</p>
+<p>&#x2F;&#x2F; nextByte()<br>System.out.println(“请输入一个Byte类型的数字”);<br>byte by;<br>by &#x3D; input.nextByte();<br>System.out.println(by);</p>
+<p>&#x2F;&#x2F; nextDouble()<br>System.out.println(“请输入一个Double类型的数字”);<br>double db;<br>db &#x3D; input.nextDouble();<br>System.out.println(db);</p>
+<p>&#x2F;&#x2F; nextFloat()<br>System.out.println(“请输入一个Float类型的数字”);<br>float fl;<br>fl &#x3D; input.nextFloat();<br>System.out.println(fl);</p>
+<p>&#x2F;&#x2F; nextInt()<br>System.out.println(“请输入一个Int类型的数字”);<br>int i;<br>i &#x3D; input.nextInt();<br>System.out.println(i);</p>
+<p>&#x2F;&#x2F; nextLong()<br>System.out.println(“请输入一个Long类型的数字”);<br>long l;<br>l &#x3D; input.nextLong();<br>System.out.println(l);</p>
+<p>&#x2F;&#x2F; nextShort()<br>System.out.println(“请输入一个Short类型的数字”);<br>short s;<br>s &#x3D; input.nextShort();<br>System.out.println(s);<br>输出结果2 </p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/a54c2c66a1e8490ea7f22cbc8a1a5efc"></p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/4e9dc771378640fd8830e5fbc81b9d53"></p>
+<h1 id="（二）hasNextxxx"><a href="#（二）hasNextxxx" class="headerlink" title="（二）hasNextxxx()"></a>（二）hasNextxxx()</h1><p>1、hasNext()：判断是否有输入</p>
+<p>2、hasNextLine()：判断是否有输入</p>
+<p>3、hasnextBigDecimal()：判断输入是否是BigDecimal类型</p>
+<p>4、hasnextBigInteger()：判断输入是否是BigInteger类型</p>
+<p>5、hasnextBoolean()：判断输入是否是BigBoolean类型</p>
+<p>6、hasnextByte()：判断输入是否是Byte类型</p>
+<p>7、hasnextDouble()：判断输入是否是Double类型</p>
+<p>8、hasnextFloat()：判断输入是否是Float类型</p>
+<p>9、hasnextInt()：判断输入是否是Int类型</p>
+<p>10、hasnextLong()：判断输入是否是Long类型</p>
+<p>11、hasnextShort()：判断输入是否是Short类型</p>
+<p>代码实例3</p>
+<p>&#x2F;* hasNextxxx() *&#x2F;<br>&#x2F;&#x2F; hasNext() &amp;&amp; hasNextLine()<br>System.out.println(“请输入一个字符串nextLine():”);<br>if (input2.hasNextLine()){<br>    String str3 &#x3D; input2.nextLine();<br>    System.out.println(str3);<br>}</p>
+<p>System.out.println(“请输入一个字符串next():”);<br>if (input2.hasNext()){<br>    String str4 &#x3D; input.next();<br>    System.out.println(str4);<br>}</p>
+<p>&#x2F;&#x2F; hasNextBigDecimal()<br>System.out.println(“请输入一个BigDecimal类型的数字”);<br>BigDecimal bd2;<br>if (input2.hasNextBigDecimal()){<br>    bd2 &#x3D; input.nextBigDecimal();<br>    System.out.println(bd2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextBigInteger()<br>System.out.println(“请输入一个BigInteger类型的数字”);<br>BigInteger bi2;<br>if (input2.hasNextBigInteger()){<br>    bi2 &#x3D; input.nextBigInteger();<br>    System.out.println(bi2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextBoolean()<br>System.out.println(“请输入一个Boolean类型”);<br>boolean bl2;<br>if (input2.hasNextBoolean()){<br>    bl2 &#x3D; input.nextBoolean();<br>    System.out.println(bl2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextByte()<br>System.out.println(“请输入一个Byte类型的数字”);<br>byte by2;<br>if (input2.hasNextByte()){<br>    by2 &#x3D; input.nextByte();<br>    System.out.println(by2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextDouble()<br>System.out.println(“请输入一个Double类型的数字”);<br>double db2;<br>if (input2.hasNextDouble()){<br>    db2 &#x3D; input.nextDouble();<br>    System.out.println(db2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextFloat()<br>System.out.println(“请输入一个Float类型的数字”);<br>float fl2;<br>if (input2.hasNextFloat()){<br>    fl2 &#x3D; input.nextFloat();<br>    System.out.println(fl2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextInt()<br>System.out.println(“请输入一个Int类型的数字”);<br>int i2;<br>if (input2.hasNextInt()){<br>    i2 &#x3D; input.nextInt();<br>    System.out.println(i2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextLong()<br>System.out.println(“请输入一个Long类型的数字”);<br>long l2;<br>if (input2.hasNextLong()){<br>    l2 &#x3D; input.nextLong();<br>    System.out.println(l2);<br>}</p>
+<p>&#x2F;&#x2F; hasNextShort()<br>System.out.println(“请输入一个Short类型的数字”);<br>short s2;<br>if (input2.hasNextShort()){<br>    s2 &#x3D; input.nextShort();<br>    System.out.println(s2);<br>}<br>三、代码<br>import java.math.BigDecimal;<br>import java.math.BigInteger;<br>import java.util.Scanner;</p>
+<p>public class Day13 {<br>    public static void main(String[] args){<br>        Scanner input &#x3D; new Scanner(System.in);</p>
+<pre><code>    /* nextxxx() */
+    // next() &amp;&amp; nextLine()
+    System.out.println(&quot;请输入一个字符串nextLine():&quot;);
+    String str1 = input.nextLine();
+    System.out.println(str1);
+
+    System.out.println(&quot;请输入一个字符串next():&quot;);
+    String str2 = input.next();
+    System.out.println(str2);
+
+    // nextBigDecimal()
+    System.out.println(&quot;请输入一个BigDecimal类型的数字&quot;);
+    BigDecimal bd;
+    bd = input.nextBigDecimal();
+    System.out.println(bd);
+
+    // nextBigInteger()
+    System.out.println(&quot;请输入一个BigInteger类型的数字&quot;);
+    BigInteger bi;
+    bi = input.nextBigInteger();
+    System.out.println(bi);
+
+    // nextBoolean()
+    System.out.println(&quot;请输入一个Boolean类型&quot;);
+    boolean bl;
+    bl = input.nextBoolean();
+    System.out.println(bl);
+
+    // nextByte()
+    System.out.println(&quot;请输入一个Byte类型的数字&quot;);
+    byte by;
+    by = input.nextByte();
+    System.out.println(by);
+
+    // nextDouble()
+    System.out.println(&quot;请输入一个Double类型的数字&quot;);
+    double db;
+    db = input.nextDouble();
+    System.out.println(db);
+
+    // nextFloat()
+    System.out.println(&quot;请输入一个Float类型的数字&quot;);
+    float fl;
+    fl = input.nextFloat();
+    System.out.println(fl);
+
+    // nextInt()
+    System.out.println(&quot;请输入一个Int类型的数字&quot;);
+    int i;
+    i = input.nextInt();
+    System.out.println(i);
+
+    // nextLong()
+    System.out.println(&quot;请输入一个Long类型的数字&quot;);
+    long l;
+    l = input.nextLong();
+    System.out.println(l);
+
+    // nextShort()
+    System.out.println(&quot;请输入一个Short类型的数字&quot;);
+    short s;
+    s = input.nextShort();
+    System.out.println(s);
+
+    Scanner input2 = new Scanner(System.in);
+
+    /* hasNextxxx() */
+    // hasNext() &amp;&amp; hasNextLine()
+    System.out.println(&quot;请输入一个字符串nextLine():&quot;);
+    if (input2.hasNextLine())&#123;
+        String str3 = input2.nextLine();
+        System.out.println(str3);
+    &#125;
+
+    System.out.println(&quot;请输入一个字符串next():&quot;);
+    if (input2.hasNext())&#123;
+        String str4 = input.next();
+        System.out.println(str4);
+    &#125;
+
+    // hasNextBigDecimal()
+    System.out.println(&quot;请输入一个BigDecimal类型的数字&quot;);
+    BigDecimal bd2;
+    if (input2.hasNextBigDecimal())&#123;
+        bd2 = input.nextBigDecimal();
+        System.out.println(bd2);
+    &#125;
+
+    // hasNextBigInteger()
+    System.out.println(&quot;请输入一个BigInteger类型的数字&quot;);
+    BigInteger bi2;
+    if (input2.hasNextBigInteger())&#123;
+        bi2 = input.nextBigInteger();
+        System.out.println(bi2);
+    &#125;
+
+    // hasNextBoolean()
+    System.out.println(&quot;请输入一个Boolean类型&quot;);
+    boolean bl2;
+    if (input2.hasNextBoolean())&#123;
+        bl2 = input.nextBoolean();
+        System.out.println(bl2);
+    &#125;
+
+    // hasNextByte()
+    System.out.println(&quot;请输入一个Byte类型的数字&quot;);
+    byte by2;
+    if (input2.hasNextByte())&#123;
+        by2 = input.nextByte();
+        System.out.println(by2);
+    &#125;
+
+    // hasNextDouble()
+    System.out.println(&quot;请输入一个Double类型的数字&quot;);
+    double db2;
+    if (input2.hasNextDouble())&#123;
+        db2 = input.nextDouble();
+        System.out.println(db2);
+    &#125;
+
+    // hasNextFloat()
+    System.out.println(&quot;请输入一个Float类型的数字&quot;);
+    float fl2;
+    if (input2.hasNextFloat())&#123;
+        fl2 = input.nextFloat();
+        System.out.println(fl2);
+    &#125;
+
+    // hasNextInt()
+    System.out.println(&quot;请输入一个Int类型的数字&quot;);
+    int i2;
+    if (input2.hasNextInt())&#123;
+        i2 = input.nextInt();
+        System.out.println(i2);
+    &#125;
+
+    // hasNextLong()
+    System.out.println(&quot;请输入一个Long类型的数字&quot;);
+    long l2;
+    if (input2.hasNextLong())&#123;
+        l2 = input.nextLong();
+        System.out.println(l2);
+    &#125;
+
+    // hasNextShort()
+    System.out.println(&quot;请输入一个Short类型的数字&quot;);
+    short s2;
+    if (input2.hasNextShort())&#123;
+        s2 = input.nextShort();
+        System.out.println(s2);
+    &#125;
+&#125;
+</code></pre>
+<p>} </p>
+<hr>
+<h1 id="二、如何使用Scanner类"><a href="#二、如何使用Scanner类" class="headerlink" title="二、如何使用Scanner类"></a>二、如何使用Scanner类</h1><h2 id="1、首先导入java-util-Scanner包；"><a href="#1、首先导入java-util-Scanner包；" class="headerlink" title="1、首先导入java.util.Scanner包；"></a>1、首先导入java.util.Scanner包；</h2><p>import java.util.Scanner;</p>
+<h2 id="2、创建Scanner类对象"><a href="#2、创建Scanner类对象" class="headerlink" title="2、创建Scanner类对象"></a>2、创建Scanner类对象</h2><p>Scanner sc &#x3D; new Scanner(System.in);</p>
+<h2 id="3、创建一个变量来接收输入的数据"><a href="#3、创建一个变量来接收输入的数据" class="headerlink" title="3、创建一个变量来接收输入的数据"></a>3、创建一个变量来接收输入的数据</h2><p>&#x2F;&#x2F;运用上面创建的sc对象调用对应的方法，控制台即可等待用户输入，我们自定义一个变量来接收即可<br>&#x2F;&#x2F;我们想要输入的数据类型不同，也需要调用不同的方法，具体应用如下：<br>String str &#x3D; sc.nextLine();<br>String str &#x3D; sc.next();<br>byte a1&#x3D; sc.nextByte();<br>short a2&#x3D; sc.nextShort();<br>int a3 &#x3D; sc.nextInt();<br>long a4 &#x3D; sc.nextLong();<br>float a5 &#x3D; sc.nextFloat();<br>double a6 &#x3D; sc.nextDouble();<br>boolean a7 &#x3D; sc.nextBoolean();</p>
+<h2 id="4、关闭Scanner类"><a href="#4、关闭Scanner类" class="headerlink" title="4、关闭Scanner类"></a>4、关闭Scanner类</h2><p>&#x2F;&#x2F;使用完Scanner后，我们一定要记得将它关闭!<br>&#x2F;&#x2F;因为使用Scanner本质上是打开了一个IO流，如果不关闭的话，它将会一直占用系统资源。<br>sc.close();<br>&#x2F;&#x2F;但是注意一旦你关闭后，就算在sc.close()这行代码后你再重新new Scanner(System.in)，那也不能重新再打开一个扫描器了，如下图会发现程序会报错<br>&#x2F;&#x2F;所以大家一定要在用不到扫描器之后再关闭，即把sc.close()代码放到最后。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/2d4b4616fc8e447ea96e058dfb962c86"></p>
+<h1 id="三、next-和nextLine-的区别（很重要）"><a href="#三、next-和nextLine-的区别（很重要）" class="headerlink" title="三、next()和nextLine()的区别（很重要）"></a>三、next()和nextLine()的区别（很重要）</h1><p>从上面的讲解，我们会发现当我们想要输入的数据类型是String时，我们有两个方法可以调用：next()和nextLine()。那这两种方法具体有什么区别呢？我们继续往下看：<br>（1）我们先来测试一下next()：</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/5c3b9b8fed914b958e116fee0ba83979"></p>
+<p>使用多组测试用例测试后，分析输出结果不难得出以下结论（这里只贴了经典测试案例，其他的大家可以自行测试）：<br>next()方法在识别输入的字符串时，不能得到我们输入的带有空格的字符串，只是读取到了hello。<br>这说明next()在读取到有效字符之后会以空格作为自己的读取结束标识符，因为我们可以发现hello前面的空格并没有影响到方法的读取。所以next()用法总结如下：</p>
+<p>next()用法总结：</p>
+<ol>
+<li>一定要读取到有效字符后才可以结束输入。</li>
+<li>对输入的有效字符之前所遇到的空白，会自动将其去除。</li>
+<li>只有输入的有效字符后才将其后面输入的空白作为结束符。</li>
+<li>next()不能得到带有空格的字符串。</li>
+<li>读取结束后，该方法会将我们的鼠标定位在我们输入数据的那一行。</li>
+</ol>
+<p>（2）再来测试一下nextLine()：</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/41f94c60809048d9b5580cc567bea13f"></p>
+<p>分析结果发现，输入结果与输入结果完全一致，nextLine()并没有被字符串中间的空格影响读取结果。<br>这是因为该方法以的是回车符（也就是我们键盘的enter键）作为结束标识符。</p>
+<p>nextLine()用法总结：<br>1、以回车符作为结束标识符，获取到的是回车符前输入的所有字符串（包括空格）。<br>2、读取结束后，该方法会将我们的鼠标定位在我们输入数据的那一行的下一行。</p>
+<h3 id="（3）先使用nextLine再使用next-、nextInt-等没问题，但是先使用next-和nextInt-等之后就不可以再紧跟nextLine使用。（这一点很重要！！！）"><a href="#（3）先使用nextLine再使用next-、nextInt-等没问题，但是先使用next-和nextInt-等之后就不可以再紧跟nextLine使用。（这一点很重要！！！）" class="headerlink" title="（3）先使用nextLine再使用next()、nextInt()等没问题，但是先使用next()和nextInt()等之后就不可以再紧跟nextLine使用。（这一点很重要！！！）"></a>（3）先使用nextLine再使用next()、nextInt()等没问题，但是先使用next()和nextInt()等之后就不可以再紧跟nextLine使用。（这一点很重要！！！）</h3><p>这是因为next()等这些方法读取结束后会紧跟一个回车符，而nextLine会直接读取到这个回车符，这就导致出现我们还没有来得及输入我们想要输入的数据，nextLine就以为我们已经输入完了这样的情况！</p>
+<h3 id="解决办法也很简单：我们直接在next-使用后加两个nextLine-就OK了，这样第一个nextLine-就会当一个‘替死鬼’，第二个nextLine-我们就可以输入自己想要输入的数据啦！"><a href="#解决办法也很简单：我们直接在next-使用后加两个nextLine-就OK了，这样第一个nextLine-就会当一个‘替死鬼’，第二个nextLine-我们就可以输入自己想要输入的数据啦！" class="headerlink" title="解决办法也很简单：我们直接在next()使用后加两个nextLine()就OK了，这样第一个nextLine()就会当一个‘替死鬼’，第二个nextLine()我们就可以输入自己想要输入的数据啦！"></a>解决办法也很简单：我们直接在next()使用后加两个nextLine()就OK了，这样第一个nextLine()就会当一个‘替死鬼’，第二个nextLine()我们就可以输入自己想要输入的数据啦！</h3><h3 id="四、hash×××-的简单使用"><a href="#四、hash×××-的简单使用" class="headerlink" title="四、hash×××()的简单使用"></a>四、hash×××()的简单使用</h3><p>我们发现Scanner类的实例变量还会有以hash开头的一系列方法，那这些方法是干什么的呢？<br>我们直接上测试用例，大家直观体会：</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/f5e7e5556dbc4405a4ef2e47069a174f"></p>
+<p>五、Scanner方法汇总</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/92baa1d8d25a44d0ac8442b8a18e39b2"></p>
+<p>该图的意思其实就是，比如：nextlnt():只能读取int值，用户如果输入了其他非整型的数据，程序就会报错。<br>其他的如nextByte()、nextDouble()也是以此类推，只能读取符合该类型的数据,所以我们要根据我们输入的数据来匹配对应的方法。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/eb49a3e427094fbcbf73b6d647047016"></p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/13/ArrayList%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://pic3.zhimg.com/v2-1ae2c665000451c000c43638d6459906_r.jpg" data-sizes="auto" alt="ArrayList方法" class="lazyload">
+                    <h1>ArrayList方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月13日</a>
+            <a><i class="nexmoefont icon-areachart"></i>844 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
         </div>
         
         <article>
             
-                <h1 id="String的创造（全部都是String类型）："><a href="#String的创造（全部都是String类型）：" class="headerlink" title="String的创造（全部都是String类型）："></a>String的创造（全部都是String类型）：</h1><p>String( ) ——创建一个空白字符串对象<br>String(byte[ ] bys)——根据字节数组的内容，来创建字符串对象<br>String（char[ ] chs)——根据字符数组的内容，来创建字符串对象<br>String&#x3D;   ——直接赋值来创建字符串对象<br>和长度有关的方法 <br>length() ——得到一个字符串的字符个数 ——int</p>
-<h1 id="和数组有关的方法"><a href="#和数组有关的方法" class="headerlink" title="和数组有关的方法"></a>和数组有关的方法</h1><p>getBytes() ——将一个字符串转换成字节数组——得到的是 byte[ ]<br>toCharArray()——将一个字符串转换成字符数组——得到的是char[ ]<br>split(“ “)——将字符串按照指定内容劈开——得到的是String[ ]</p>
-<h1 id="和判断有关的方法"><a href="#和判断有关的方法" class="headerlink" title="和判断有关的方法"></a>和判断有关的方法</h1><p>equals(String)——判断两个字符串的内容是否一模一样——boolean<br>equalsIgnoreCase(String)——忽略大小写的比较两个字符串的内容是否一模一样——boolean<br>contains(String)——判断一个字符串里面是否包含指定的内容——boolean<br>startsWith(String) —— 判断一个字符串是否以指定的内容开头——boolean<br>endsWith(String) ——判断一个字符串是否以指定的内容结尾——boolean</p>
-<h1 id="和改变内容有关的方法"><a href="#和改变内容有关的方法" class="headerlink" title="和改变内容有关的方法"></a>和改变内容有关的方法</h1><p>toUpperCase() ——将一个字符串全部转换成大写——String<br>toLowerCase()——将一个字符串全部转换成小写——String<br>replace(String,String) ——将某个内容全部替换成指定内容——String<br>replaceAll(String,String) ——将某个内容全部替换成指定内容，支持正则——String<br>repalceFirst(String,String) ——将第一次出现的某个内容替换成指定的内容——String<br>substring(int) ——从指定下标开始一直截取到字符串的最后——String<br>substring(int,int) ——从下标x截取到下标y-1对应的元素——String<br>trim() ——去除一个字符串的前后空格——String          </p>
-<h1 id="和位置有关的方法"><a href="#和位置有关的方法" class="headerlink" title="和位置有关的方法"></a>和位置有关的方法</h1><p>charAt(int) ——得到指定下标位置对应的字符——char<br>indexOf(String)——得到指定内容第一次出现的下标——int<br>lastIndexOf(String)——得到指定内容最后一次出现的下标——int </p>
-<h2 id="由基本数据型态转换成String"><a href="#由基本数据型态转换成String" class="headerlink" title="由基本数据型态转换成String"></a>由基本数据型态转换成String</h2><p>1、String.valueOf(boolean b) : 将 boolean 变量 b 转换成字符串<br>2、String.valueOf(char c) : 将 char 变量 c 转换成字符串<br>3、String.valueOf(char[] data) : 将 char 数组 data 转换成字符串<br>4、String.valueOf(char[] data, int offset, int count) : 将 char 数组 data中由data[offset]开始取count个元素转换成字符串<br>5、String.valueOf(double d) : 将 double 变量 d 转换成字符串<br>6、String.valueOf(float f) : 将 float 变量 f 转换成字符串<br>7、String.valueOf(int i) : 将 int 变量 i 转换成字符串<br>8、String.valueOf(long l) : 将 long 变量 l 转换成字符串<br>9、String.valueOf(Object obj) : 将 obj 对象转换成 字符串, 等于 obj.toString()</p>
-<h1 id="String-转换成-数字的基本数据型态"><a href="#String-转换成-数字的基本数据型态" class="headerlink" title="String 转换成 数字的基本数据型态"></a>String 转换成 数字的基本数据型态</h1><p>1、byte :     Byte.parseByte(String s) : 将 s 转换成 byte<br>2、byte :     Byte.parseByte(String s, int radix) : 以 radix 为基底 将 s 转换为 byte ，比如说 Byte.parseByte(“11”, 16) 会得到 17<br>3、double :   Double.parseDouble(String s) : 将 s 转换成 double<br>4、float :     Float.parseFloat(String s) : 将 s 转换成 float<br>5、int :      Integer.parseInt(String s) : 将 s 转换成 int<br>6、long :     Long.parseLong(String s)</p>
-<h1 id="String与new-String-的区别"><a href="#String与new-String-的区别" class="headerlink" title="String与new String()的区别"></a>String与new String()的区别</h1><p>JVM为了提升性能和减少内存开销，避免字符串的重复创建，维护了一块特殊的内存空间——字符串实例池。<br>String赋值的两种方式。</p>
-<p>1、String str &#x3D; “test”;<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>如果存在，直接把实例池中”test”的地址返回给str。如果不存在，则会在实例池中创建”test”对象，并把该对象的地址返回给str。</p>
-<p><img src="https://s1.vika.cn/space/2023/04/05/7bb1fbbb8c494f0581832810e1f016e9"><br>所以通过&#x3D;&#x3D;比较是，str1，str2指向的是同一地址，所以返回true；</p>
-<p>2、String str &#x3D; new String(“test”);<br>以这种方式赋值时，JVM会先从字符串实例池中查询是否存在”test”这个对象，<br>若不存在则会在实例池中创建”test”对象，同时在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。<br>若实例池存在则直接在堆中创建”test”这个对象，然后将堆中的这个对象的地址返回赋给引用str。</p>
-<p><img src="https://s1.vika.cn/space/2023/04/05/85649fda37a049b48ab468dd28bfc776"></p>
-<p><img src="https://s1.vika.cn/space/2023/04/05/b2f95343617a485f855a9bb58899d443"></p>
+                <h1 id="Arraylist是什么？"><a href="#Arraylist是什么？" class="headerlink" title="Arraylist是什么？"></a>Arraylist是什么？</h1><p>ArrayList 类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，我们可以添加或删除元素。ArrayList 继承了 AbstractList ，并实现了 List 接口。</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/642deceac3e1451ebbbf980d98a4a1c8"></p>
+<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下："><a href="#1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下：" class="headerlink" title="1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下："></a>1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下：</h2><p>代码如下（示例）：</p>
+<p>import java.util.ArrayList; &#x2F;&#x2F; 引入 ArrayList 类</p>
+<p>ArrayList<E> objectName &#x3D;new ArrayList&lt;&gt;();　 &#x2F;&#x2F; 初始化<br>E: 泛型数据类型，用于设置 objectName 的数据类型，只能为引用数据类型。<br>objectName: 对象名</E></p>
+<h1 id="2-添加元素"><a href="#2-添加元素" class="headerlink" title="2.添加元素"></a>2.添加元素</h1><p>ArrayList 类提供了很多有用的方法，添加元素到 ArrayList 可以使用 add() 方法 。 添加并遍历元素如下</p>
+<p>package Demo;</p>
+<p>import java.util.ArrayList;</p>
+<p>public class DemoArraylistEach {<br>    public static void main(String[] args) {<br>        ArrayList list &#x3D; new ArrayList();<br>        list.add(“迪丽热巴”);<br>        list.add(“古力娜扎”);<br>        list.add(“马儿扎哈”);<br>        System.out.println(list);<br>        for (int i &#x3D; 0; i &lt; list.size(); i++) {<br>            System.out.println(list.get(i));<br>        }<br>    }<br>}</p>
+<p>输出结果为如下</p>
+<p>[迪丽热巴, 古力娜扎, 马儿扎哈]<br>迪丽热巴<br>古力娜扎<br>马儿扎哈</p>
+<h1 id="3-删除元素"><a href="#3-删除元素" class="headerlink" title="3.删除元素"></a>3.删除元素</h1><p>如果要删除 ArrayList 中的元素可以使用 remove() 方法：</p>
+<p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        sites.remove(3); &#x2F;&#x2F; 删除第四个元素<br>        System.out.println(sites);<br>    }<br>}<br>以上实例，执行输出结果为：</String></String></p>
+<p>[Google, Runoob, Taobao]</p>
+<h1 id="4-计算大小"><a href="#4-计算大小" class="headerlink" title="4.计算大小"></a>4.计算大小</h1><p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        System.out.println(sites.size());<br>    }<br>}<br>以上实例，执行输出结果为：</String></String></p>
+<p>4</p>
+<h1 id="5-其他的引用类型"><a href="#5-其他的引用类型" class="headerlink" title="5.其他的引用类型"></a>5.其他的引用类型</h1><p>ArrayList 中的元素实际上是对象，在以上实例中，数组列表元素都是字符串 String 类型。</p>
+<p>如果我们要存储其他类型，而 <E> 只能为引用数据类型，这时我们就需要使用到基本类型的包装类。</E></p>
+<p>基本类型对应的包装类表如下：</p>
+<p><img src="https://s1.vika.cn/space/2023/04/13/2e347c9ba9e4481fa34e5f620d9dafeb"></p>
+<p>此外，BigInteger、BigDecimal 用于高精度的运算，BigInteger 支持任意精度的整数，也是引用类型，但它们没有相对应的基本类型。</p>
+<p>rrayList<Integer> li&#x3D;new Arraylist&lt;&gt;();     &#x2F;&#x2F; 存放整数元素<br>ArrayList<Character> li&#x3D;new Arraylist&lt;&gt;();   &#x2F;&#x2F; 存放字符元素<br>以下实例使用 ArrayList 存储数字(使用 Integer 类型):</Character></Integer></p>
+<p>import java.util.ArrayList;</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(10);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(25);<br>        for (int i : myNumbers) {<br>            System.out.println(i);<br>        }<br>    }<br>}<br> 以下是输出结果</Integer></Integer></p>
+<p>10<br>15<br>20<br>25</p>
+<h1 id="ArrayList-排序"><a href="#ArrayList-排序" class="headerlink" title="ArrayList 排序"></a>ArrayList 排序</h1><p>Collections 类也是一个非常有用的类，位于 java.util 包中，提供的 sort() 方法可以对字符或数字列表进行排序。</p>
+<p>以下实例对字母进行排序：</p>
+<p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Taobao”);<br>        sites.add(“Wiki”);<br>        sites.add(“Runoob”);<br>        sites.add(“Weibo”);<br>        sites.add(“Google”);<br>        Collections.sort(sites);  &#x2F;&#x2F; 字母排序<br>        for (String i : sites) {<br>            System.out.println(i);<br>        }<br>    }<br>}</String></String></p>
+<p>执行结果</p>
+<p>Google<br>Runoob<br>Taobao<br>Weibo<br>Wiki<br>以下实例对数字进行排序：</p>
+<p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(33);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(34);<br>        myNumbers.add(8);<br>        myNumbers.add(12);</Integer></Integer></p>
+<pre><code>    Collections.sort(myNumbers);  // 数字排序
+
+    for (int i : myNumbers) &#123;
+        System.out.println(i);
+    &#125;
+&#125;
+</code></pre>
+<p>}</p>
+<p>执行结果</p>
+<p>8<br>12<br>15<br>20<br>33<br>34</p>
+<h1 id="Java-ArrayList-方法"><a href="#Java-ArrayList-方法" class="headerlink" title="Java ArrayList 方法"></a>Java ArrayList 方法</h1><p>Java ArrayList 常用方法列表如下：<br><img src="https://s1.vika.cn/space/2023/04/13/75460106d7b64681a8cb681ad7737f30"></p>
 
             
         </article>
     </div>
     
     <div class="nexmoe-post">
-        <a href="/2023/04/05/Math%E6%96%B9%E6%B3%95/">
+        <a href="/2023/04/12/Integer%E6%96%B9%E6%B3%95/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
-                    <img data-src="https://ts1.cn.mm.bing.net/th/id/R-C.b6f8fc05b5fc5773e2727cd4aa8e99c0?rik=G%2f%2f0F1v4oxuHCQ&riu=http%3a%2f%2fwx1.sinaimg.cn%2flarge%2f006DFKaTly1fqjwp6b2i7j30rs0rrwhp.jpg&ehk=hwPkbgu27VnnKz5DaMbR5sejG8eF7XJSaZyiMMSWMEE%3d&risl=&pid=ImgRaw&r=0" data-sizes="auto" alt="Math方法" class="lazyload">
-                    <h1>Math方法</h1>
+                    <img data-src="https://n.sinaimg.cn/sinakd10101/530/w700h630/20200405/b018-irtymmw1298171.jpg" data-sizes="auto" alt="Integer方法" class="lazyload">
+                    <h1>Integer方法</h1>
                 </div>
             
         </a>
         
         <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月05日</a>
-            <a><i class="nexmoefont icon-areachart"></i>819 字</a>
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月12日</a>
+            <a><i class="nexmoefont icon-areachart"></i>2.9k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 14 分钟</a>
+        </div>
+        
+        <article>
+            
+                <h1 id="1、Integer-int-value-和Integer-String-s"><a href="#1、Integer-int-value-和Integer-String-s" class="headerlink" title="1、Integer(int value)和Integer(String s)"></a>1、Integer(int value)和Integer(String s)</h1><p>构造方法，肯定常用。</p>
+<pre><code>    Integer a1 = new Integer(100); //传入的是int类型
+    Integer a2 = new Integer(&quot;200&quot;); // 传入的是String类型
+    System.out.println(a1);  //100
+    System.out.println(a2);  //200
+
+     //Integer a3 = new Integer(&quot;123abc&quot;);  //异常：java.lang.NumberFormatException，数字格式化异常
+
+    //自java5开始，有了自动装箱和自动拆箱，我们不再使用构造方法了
+    Integer a4 = 300;
+
+    //Integer a5 = &quot;400&quot;;  //这是错误的写法
+    System.out.println(a4);  //300
+</code></pre>
+<h1 id="Integer-compare（int，int）"><a href="#Integer-compare（int，int）" class="headerlink" title="Integer.compare（int，int）"></a>Integer.compare（int，int）</h1><p>比较两个 int数字值。<br>        System.out.println(Integer.compare(5, 6));&#x2F;&#x2F; 左面小于右面，返回一个负数<br>        System.out.println(Integer.compare(6, 6));&#x2F;&#x2F; 左面等于右面，返回一个0<br>        System.out.println(Integer.compare(56, 5));&#x2F;&#x2F; 左面大于右面，返回一个正数1</p>
+<h1 id="Integer-compareTo-int-用对象名调用"><a href="#Integer-compareTo-int-用对象名调用" class="headerlink" title="Integer.compareTo(int) ,用对象名调用"></a>Integer.compareTo(int) ,用对象名调用</h1><p>数字比较两个 Integer对象。<br>        Integer i1 &#x3D; 1;&#x2F;&#x2F; 要比较的数<br>        i1.compareTo(8);&#x2F;&#x2F; 8是参数<br>        System.out.println(i1.compareTo(8));&#x2F;&#x2F; 参数大于要比较的数。返回-1<br>        System.out.println(i1.compareTo(1));&#x2F;&#x2F; 参数等于要比较的数，等于0<br>        System.out.println(i1.compareTo(0));&#x2F;&#x2F; 参数小于要比较的数返回1</p>
+<h1 id="Integer-compareUnsigned-int-int"><a href="#Integer-compareUnsigned-int-int" class="headerlink" title="Integer.compareUnsigned(int, int)"></a>Integer.compareUnsigned(int, int)</h1><p>比较两个 int值，以数值方式将值视为无符号。<br>        &#x2F;&#x2F; 价值0如果x &#x3D;&#x3D; y ; 如果x &lt; y为无符号值，则小于0 ; 如果x &gt; y为无符号值，则值大于0<br>        System.out.println(Integer.compareUnsigned(5, 8));<br>        System.out.println(Integer.compareUnsigned(8, 8));<br>        System.out.println(Integer.compareUnsigned(8, 5));<br>    }</p>
+<h1 id="Integer-byteValue-用对象名调用"><a href="#Integer-byteValue-用对象名调用" class="headerlink" title="Integer.byteValue() ,用对象名调用"></a>Integer.byteValue() ,用对象名调用</h1><p>将Integer类变为byte类<br>        &#x2F;&#x2F; 返回此值 Integer为 byte的基本收缩转换后。也就是说，这个by值必须是Integer类型的<br>        Integer integer &#x3D; 3;<br>        byte by &#x3D; integer.byteValue();<br>        &#x2F;&#x2F; System.out.println(by);</p>
+<h1 id="Integer-decode-“-“-，对象调用"><a href="#Integer-decode-“-“-，对象调用" class="headerlink" title="Integer.decode(“ “) ，对象调用"></a>Integer.decode(“ “) ，对象调用</h1><p>&#x2F;&#x2F;将 String解码成 Integer 。<br>        Integer llInteger&#x3D;new Integer(28);<br>        System.out.println(llInteger.decode(“22”));&#x2F;&#x2F;对象去调用decode方法</p>
+<h1 id="Integer-divideUnsigned-int，int"><a href="#Integer-divideUnsigned-int，int" class="headerlink" title="Integer.divideUnsigned(int，int)"></a>Integer.divideUnsigned(int，int)</h1><p>&#x2F;&#x2F;		&#x2F;&#x2F;返回将第一个参数除以秒的无符号商，其中每个参数和结果被解释为无符号值。<br>&#x2F;&#x2F;		System.out.println(Integer.divideUnsigned(8, 2));</p>
+<h1 id="Integer-equals"><a href="#Integer-equals" class="headerlink" title="Integer.equals()"></a>Integer.equals()</h1><pre><code>    //equals(Object obj) 将此对象与指定的对象进行比较。
+    Integer ll=new Integer(22);
+    Integer ql=new Integer(11);
+    System.out.println(new Integer(22).equals(new Integer(11)));//返回值为true和false
+</code></pre>
+<h1 id="Integer-getInteger-String"><a href="#Integer-getInteger-String" class="headerlink" title="Integer.getInteger(String)"></a>Integer.getInteger(String)</h1><pre><code>    //getInteger(String nm) 确定具有指定名称的系统属性的整数值。
+    Integer integer2=new Integer(66);
+    //System.out.println(integer2.getInteger(&quot;integer2&quot;));
+    
+</code></pre>
+<h1 id="Integer-getInteger-String-int"><a href="#Integer-getInteger-String-int" class="headerlink" title="Integer.getInteger(String,int)"></a>Integer.getInteger(String,int)</h1><pre><code>    //getInteger(String nm, int val) 确定具有指定名称的系统属性的整数值。 
+    //第一个参数被视为系统属性的名称。第二个参数是默认值。 如果没有指定名称的属性，如果该属性没有正确的数字格式，或者指定的名称为空或null ，则返回表示第二个参数的值的Integer对象。 
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,0));//就等于下面
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,new Integer(0)));
+</code></pre>
+<h1 id="Integer-getInteger-String-Integer"><a href="#Integer-getInteger-String-Integer" class="headerlink" title="Integer.getInteger(String,Integer)"></a>Integer.getInteger(String,Integer)</h1><pre><code>    //getInteger(String nm, Integer val) 返回具有指定名称的系统属性的整数值。 
+    System.out.println(new Integer(22).getInteger(&quot;&quot;, 33));//就等于下面那个
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,new Integer(0)));
+</code></pre>
+<h1 id="Integer-hashCode"><a href="#Integer-hashCode" class="headerlink" title="Integer.hashCode()"></a>Integer.hashCode()</h1><pre><code>    //hashCode() 返回这个 Integer的哈希码。 
+    System.out.println(new Integer(56).hashCode());
+</code></pre>
+<h1 id="Integer-hashCode-int"><a href="#Integer-hashCode-int" class="headerlink" title="Integer.hashCode(int)"></a>Integer.hashCode(int)</h1><pre><code>    //hashCode(int value) 返回值为int的哈希码; 兼容Integer.hashCode() 。
+    System.out.println(new Integer(&quot;99&quot;).hashCode(33));
+
+    /*
+     * 在Java中，哈希码代表了对象的一种特征，例如我们判断某两个字符串是否==，如果其哈希码相等，则这两个字符串是相等的。其次，哈希码是一种数据结构的算法。常见的哈希码的算法有：
+        1：Object类的hashCode.返回对象的内存地址经过处理后的结构，由于每个对象的内存地址都不一样，所以哈希码也不一样。
+        2：String类的hashCode.根据String类包含的字符串的内容，根据一种特殊算法返回哈希码，只要字符串内容相同，返回的哈希码也相同。
+        3：Integer类，返回的哈希码就是Integer对象里所包含的那个整数的数值，例如Integer i1=new Integer(100),i1.hashCode的值就是100 。由此可见，2个一样大小的Integer对象，返回的哈希码也一样。
+     * 
+     */
+    
+</code></pre>
+<h1 id="Integer-highestOneBit-int-i-对象名调用"><a href="#Integer-highestOneBit-int-i-对象名调用" class="headerlink" title="Integer.highestOneBit(int i) ,对象名调用"></a>Integer.highestOneBit(int i) ,对象名调用</h1><pre><code>    //highestOneBit(int i) 
+    //返回一个 int值与至多一个单个1位，在最高阶（“最左侧”）的位置在指定的一个位 int值。 
+    //这个函数的作用是取 i 这个数的二进制形式最左边的最高一位且高位后面全部补零，最后返回int型的结果。
+    Integer ioInteger = 12;
+    System.out.println(ioInteger.highestOneBit(13));
+    
+</code></pre>
+<h1 id="Integer-intValue"><a href="#Integer-intValue" class="headerlink" title="Integer.intValue()"></a>Integer.intValue()</h1><pre><code>    //intValue() 将 Integer的值作为 int 。 
+    System.out.println(new Integer(9).intValue());//该对象在转换为 int之后表示的 int 。
+    
+</code></pre>
+<h1 id="Integer-max-int-int"><a href="#Integer-max-int-int" class="headerlink" title="Integer.max(int,int)"></a>Integer.max(int,int)</h1><pre><code>    //max(int a, int b) 返回两个 int的较大值，就像调用 Math.max一样 。 
+    System.out.println(new Integer(1).max(2, 3));//返回max中最大的值
+</code></pre>
+<h1 id="Integer-min-int-int"><a href="#Integer-min-int-int" class="headerlink" title="Integer.min(int,int)"></a>Integer.min(int,int)</h1><pre><code>    //min(int a, int b) 返回两个 int的较小值，就像调用 Math.min一样 。
+    System.out.println(new Integer(1).min(2, 3));
+    
+</code></pre>
+<h1 id="Integer-parseInt-String-s"><a href="#Integer-parseInt-String-s" class="headerlink" title="Integer.parseInt(String s)"></a>Integer.parseInt(String s)</h1><pre><code>    //parseInt(String s) 将字符串参数解析为带符号的十进制整数。默认是十进制 
+    System.out.println(new Integer(55).parseInt(&quot;+110&quot;));
+    System.out.println(new Integer(55).parseInt(&quot;-110&quot;));//由参数以十进制表示的整数值
+    
+</code></pre>
+<h1 id="Integer-parseInt-String-int"><a href="#Integer-parseInt-String-int" class="headerlink" title="Integer.parseInt(String ,int)"></a>Integer.parseInt(String ,int)</h1><pre><code>    //parseInt(String s, int radix) 将字符串参数解析为第二个参数指定的基数中的有符号整数。
+    /*
+     * 方法parseInt(String s,int radix)的目的是输出一个十进制数，这个数字是“String s”但是我们要知道他是多少进制的，而方法中“int radix”参数正是来表达这个信息的。 
+        比如：parseInt(1010,2) 
+        意思就是：输出2进制数1010在十进制下的数.
+        radix的范围是在2~36之间，超出范围会抛异常。其中s的长度也不能超出7，否则也会抛异常。  
+     * 
+     */
+    System.out.println(new Integer(9).parseInt(&quot;111&quot;, 11));
+    
+</code></pre>
+<p>&#x2F;&#x2F;parseUnsignedInt(String s) 将字符串参数解析为无符号十进制整数。默认是十进制输出<br>        System.out.println(new Integer(1).parseUnsignedInt(“10110”));<br>         &#x2F;&#x2F;parseInt(String s, int radix) 将字符串参数解析为第二个参数指定的基数中的有符号整数。<br>        System.out.println(new Integer(1).parseUnsignedInt(“10110”,10));</p>
+<p>&#x2F;&#x2F;		&#x2F;&#x2F;remainderUnsigned(int dividend, int divisor)<br>&#x2F;&#x2F;		&#x2F;&#x2F;返回无符号余数，将第一个参数除以秒，其中每个参数和结果被解释为无符号值。<br>&#x2F;&#x2F;		System.out.println(new Integer(1).remainderUnsigned(200, 300));<br>&#x2F;&#x2F;		System.out.println(new Integer(1).remainderUnsigned(20, 30));</p>
+<p>&#x2F;&#x2F;		&#x2F;&#x2F;vreverse(int i) 返回由指定的二进制补码表示反转位的顺序而获得的值 int值。i - 要反转的值<br>&#x2F;&#x2F;		System.out.println(new Integer(10).reverse(3));<br>&#x2F;&#x2F;		&#x2F;&#x2F;reverseBytes(int i) 返回反转指定的二进制补码表示的字节顺序而获得的值 int值。i - 要颠倒其字节的值<br>&#x2F;&#x2F;		System.out.println(new Integer(500).reverseBytes(3));</p>
+<pre><code>    //shortValue() 返回此值 Integer为 short的基本收缩转换后。
+    System.out.println(new Integer(12).shortValue());
+    Integer jk=12;
+    //Integer jk1=jk.shortValue();转化后的值的类型为short
+    
+    //signum(int i) 返回指定的 int值的 int函数。 
+    //返回指定的int值的signum函数。 （如果指定的值为负，返回值为-1;如果指定的值为零，返回值为0;如果指定的值为正，返回值为1）。 
+    System.out.println(new Integer(12).signum(-12));
+    System.out.println(new Integer(12).signum(12));
+    System.out.println(new Integer(12).signum(0));
+    
+    //sum(int a, int b) 根据+运算符将两个整数相加。 
+    System.out.println(new Integer(0).sum(1, 2));
+    
+    //toBinaryString(int i) 在基数2中返回整数参数的字符串表示形式为无符号整数。
+    //如果整型变量为负，这个变量加上二百三十二就是实际储存的二进制；如果整型变量为正，这个变量的二进制就是实际存储的二进制．然后，从左到右扫描入字符串中．如果无符号值为零，它就只用一个零来表示；否则的话，无符号字符串第一位不用零来表示．二进制表中只用0和1.
+    System.out.println(new Integer(0).toBinaryString(1));
+    System.out.println(new Integer(0).toBinaryString(-333));
+    System.out.println(new Integer(0).toBinaryString(0));
+    
+    //toHexString(int i) 返回整数参数的字符串表示形式，作为16位中的无符号整数。 
+    //说简单点，就是十进制转化为十六进制
+    System.out.println(new Integer(0).toHexString(1));
+    System.out.println(new Integer(0).toHexString(-333));
+    System.out.println(new Integer(0).toHexString(0));
+    
+    //toOctalString(int i) 在基数8中返回整数参数的字符串表示形式为无符号整数。
+    //由参数以八进制输出
+    System.out.println(new Integer(0).toOctalString(1));
+    System.out.println(new Integer(0).toOctalString(-333));
+    System.out.println(new Integer(0).toOctalString(0));
+    
+    //toString(int i)  返回 String表示此对象 Integer的价值。 
+    System.out.println(new Integer(0).toString(33));
+    System.out.println(new Integer(0).toString(22));
+    
+    //toString(int i, int radix) 返回由第二个参数指定的基数中的第一个参数的字符串表示形式。 
+    System.out.println(new Integer(0).toString(33,4));//第二个参数是直接基数返回
+    System.out.println(new Integer(0).toString(22,10));
+    
+    //toUnsignedLong(int x) 参数给转换 long由无符号转换。
+    System.out.println(new Integer(0).toUnsignedLong(22));
+    System.out.println(new Integer(0).toUnsignedLong(0));
+    System.out.println(new Integer(0).toUnsignedLong(-22));
+    //toUnsignedString(int i) 将参数的字符串表示形式返回为无符号十进制值。 
+    System.out.println(new Integer(1).toUnsignedString(22));
+    System.out.println(new Integer(2).toUnsignedString(0));
+    System.out.println(new Integer(3).toUnsignedString(-22));
+    //toUnsignedString(int i, int radix) 	以第二个参数指定的基数中的无符号整数值返回第一个参数的字符串表示形式。 
+    System.out.println(new Integer(1).toUnsignedString(22,2));
+    System.out.println(new Integer(2).toUnsignedString(0,10));
+    System.out.println(new Integer(3).toUnsignedString(-22,8));
+    
+    //valueOf(int i) 返回一个 Integer指定的 int值的 Integer实例。
+    System.out.println(new Integer(111).valueOf(11));
+    System.out.println(new Integer(111).valueOf(-11));
+    System.out.println(new Integer(111).valueOf(0));
+    
+    //valueOf(String s) 返回一个 Integer对象，保存指定的值为 String 。
+    System.out.println(new Integer(111).valueOf(&quot;99&quot;));
+    System.out.println(new Integer(111).valueOf(&quot;88&quot;));
+    System.out.println(new Integer(111).valueOf(&quot;-12&quot;));
+    
+    //valueOf(String s, int radix) 返回一个 Integer对象，保存从指定的String中 String的值，当用第二个参数给出的基数进行解析时。 
+    //返回第二个参数指定的技术进行解析
+    System.out.println(new Integer(111).valueOf(&quot;99&quot;,10));
+    System.out.println(new Integer(111).valueOf(&quot;88&quot;,11));
+    System.out.println(new Integer(111).valueOf(&quot;-12&quot;,10));
+</code></pre>
+<h1 id="2、public-static-int-parseInt-String-s"><a href="#2、public-static-int-parseInt-String-s" class="headerlink" title="2、public static int parseInt(String s)"></a>2、public static int parseInt(String s)</h1><p>将字符串转换成整数。</p>
+<p>int b1 &#x3D; Integer.parseInt(“123”);<br>        System.out.println(b1);  &#x2F;&#x2F;123</p>
+<pre><code>    //int b2 = Integer.parseInt(&quot;3.14&quot;);  //异常：java.lang.NumberFormatException，数字格式化异常
+    //int b3 = Integer.parseInt(&quot;123abc&quot;);  //异常：java.lang.NumberFormatException
+    //int b4 = Integer.parseInt((&quot;abc123&quot;));  //异常：java.lang.NumberFormatException
+</code></pre>
+<h1 id="3、public-static-String-toBinaryString-int-i"><a href="#3、public-static-String-toBinaryString-int-i" class="headerlink" title="3、public static String toBinaryString(int i)"></a>3、public static String toBinaryString(int i)</h1><p>将一个正整数转换成2进制字符串。</p>
+<p> String c1 &#x3D; Integer.toBinaryString(3);<br>        System.out.println(c1);  &#x2F;&#x2F; 11</p>
+<h1 id="public-static-String-toOctalString-int-i"><a href="#public-static-String-toOctalString-int-i" class="headerlink" title="public static String toOctalString(int i)"></a>public static String toOctalString(int i)</h1><p>将一个正整数转换成8进制字符串。</p>
+<p> String c2 &#x3D; Integer.toOctalString(9);<br>        System.out.println(c2);  &#x2F;&#x2F;11</p>
+<h1 id="public-static-String-toHexString-int-i"><a href="#public-static-String-toHexString-int-i" class="headerlink" title="public static String toHexString(int i)"></a>public static String toHexString(int i)</h1><p>将一个正整数转换成16进制字符串。</p>
+<p> String c3 &#x3D; Integer.toHexString(10);<br>        System.out.println(c3);  &#x2F;&#x2F; a</p>
+<h1 id="public-static-String-toUnsignedString-int-i-int-radix"><a href="#public-static-String-toUnsignedString-int-i-int-radix" class="headerlink" title="public static String toUnsignedString(int i, int radix)"></a>public static String toUnsignedString(int i, int radix)</h1><p>将一个正整数转换成r进制字符串（r的范围是[2, 64]）。</p>
+<p>String c4 &#x3D; Integer.toUnsignedString(11, 16);<br>        System.out.println(c4);  &#x2F;&#x2F; b</p>
+<h1 id="4、public-static-Integer-valueOf-int-i"><a href="#4、public-static-Integer-valueOf-int-i" class="headerlink" title="4、public static Integer valueOf(int i)"></a>4、public static Integer valueOf(int i)</h1><p>将一个整数转换成Integer类型对象，即装箱。</p>
+<p> Integer d1 &#x3D; Integer.valueOf(100);<br>        System.out.println(d1);  &#x2F;&#x2F;100</p>
+<h1 id="public-static-Integer-valueOf-String-s"><a href="#public-static-Integer-valueOf-String-s" class="headerlink" title="public static Integer valueOf(String s)"></a>public static Integer valueOf(String s)</h1><p>将字符串数字转换成Integer类型对象，也是装箱。</p>
+<p>  Integer d2 &#x3D; Integer.valueOf(“200”);<br>        System.out.println(d2);  &#x2F;&#x2F;200</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/07/Arrays%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://ts1.cn.mm.bing.net/th/id/R-C.7cb4f95aa4024cc1ae9bc227ebd7a41c?rik=PFOzKd4eWdUaEg&riu=http%3a%2f%2foss.sharedaka.com%2fimg%2fochvq0GU7KMbkzfNhlalSD8PKZgo1599971274702_0.png%3fx-oss-process%3dimage%2fresize%2cm_fixed%2ch_200%2cw_200&ehk=Qgi3TqeZ7N7gRqhM8TpJ8i8VwYe7rENRaEdt6%2fKLHVQ%3d&risl=&pid=ImgRaw&r=0" data-sizes="auto" alt="Arrays方法" class="lazyload">
+                    <h1>Arrays方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月07日</a>
+            <a><i class="nexmoefont icon-areachart"></i>847 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
+        </div>
+        
+        <article>
+            
+                <h1 id="导包"><a href="#导包" class="headerlink" title="导包"></a>导包</h1><p>Arrays的常用方法那肯定是在Arrays类内了，所以导包：java.util.Arrays;</p>
+<h1 id="Arrays-toString-数组名-方法"><a href="#Arrays-toString-数组名-方法" class="headerlink" title="Arrays.toString(数组名) 方法"></a>Arrays.toString(数组名) 方法</h1><p>方法作用：快速输出数组内容,以字符串的形式</p>
+<p>int[] a &#x3D; {1,2,3,4,5};<br>System.out.println(Arrays.toString(a));<br>&#x2F;&#x2F; 输出格式：[1,2,3,4,5]</p>
+<h1 id="Arrays-sort-数组名-方法"><a href="#Arrays-sort-数组名-方法" class="headerlink" title="Arrays.sort(数组名)  方法"></a>Arrays.sort(数组名)  方法</h1><p>给数组排序，默认升序</p>
+<p>int[] a &#x3D; new int[5]{5，4，3，2，1};<br>Arrays.sort(a); &#x2F;&#x2F; 1 2 3 4 5<br>System.out.println(Arrays.toString(a));<br>&#x2F;&#x2F; [1,2,3,4,5]</p>
+<h1 id="Arrays-sort-数组名，起始下标，排序个数"><a href="#Arrays-sort-数组名，起始下标，排序个数" class="headerlink" title="Arrays.sort(数组名，起始下标，排序个数)"></a>Arrays.sort(数组名，起始下标，排序个数)</h1><p>给数组排序，默认升序,可以有开始位置和升序的数量</p>
+<p>Scanner s &#x3D; Scanner(System.in);<br>int n &#x3D; s.nextInt();<br>int[] a &#x3D; new int[n]<br>for(int i &#x3D; 0; i &lt; n; i++)<br>   a[i] &#x3D; s.nextInt();<br>Arrays.sort(a,0,n - 1);<br>&#x2F;&#x2F;输入n个数，按照升序排列</p>
+<p>对字符串进行排序时，是对每一个字符比较，而不是简单的比较长度<br>&#x2F;&#x2F; str1 &#x3D; abd<br>&#x2F;&#x2F; str2 &#x3D; abcdef<br>&#x2F;&#x2F; 因为d &gt; c,所以 str1 &gt; str2</p>
+<h1 id="Arrays-sort-降序排列"><a href="#Arrays-sort-降序排列" class="headerlink" title="Arrays.sort()降序排列"></a>Arrays.sort()降序排列</h1><p>不能作用于基本数据类型！</p>
+<h2 id="Collections-reverseOrder"><a href="#Collections-reverseOrder" class="headerlink" title="Collections.reverseOrder()"></a>Collections.reverseOrder()</h2><p>Integer[] a &#x3D; {1,2,3,4,5}<br>Arrays.sort(a,Collections.reverseOrder())<br>&#x2F;&#x2F; 输出数组的内容即为：5 4 3 2 1<br>&#x2F;&#x2F;注意不能用基本数据类型</p>
+<h2 id="实现Comparator接口"><a href="#实现Comparator接口" class="headerlink" title="实现Comparator接口"></a>实现Comparator接口</h2><p>Comparator接口中有一个compare()方法，重写它就可以改变Arrays.sort()的排序规则</p>
+<p>这里之后在补充</p>
+<h1 id="Arrays-equals-方法"><a href="#Arrays-equals-方法" class="headerlink" title="Arrays.equals() 方法"></a>Arrays.equals() 方法</h1><p>比较两个数组内容是否相等</p>
+<p>int[] a &#x3D; {1,2,3};<br>int[] b &#x3D; {1,2,3};<br>boolean isSame &#x3D; Arrays.equals(a,b);<br>&#x2F;&#x2F;true</p>
+<p>注意：Arrays.equals()是比较数组内容，而a.equals(b) 这样的方法是比较地址值</p>
+<h1 id="Arrays-binarySearch"><a href="#Arrays-binarySearch" class="headerlink" title="Arrays.binarySearch()"></a>Arrays.binarySearch()</h1><p>在数组中查找元素</p>
+<p>int Arrays.binarySearch( Datatype[], Datatype key)<br>在数组中查找指定值，若找到，则返回此值的下标，</p>
+<p>若没找到，返回 -插入点-1；</p>
+<p>如：</p>
+<p>int[] a &#x3D; {1,5,6,7};<br>Arrays.binarySearch(a,2)  &#x2F;&#x2F;没找到，插入点为1，则返回 -2<br>Arrays.binarySearch(a,4)  &#x2F;&#x2F;没找到，插入点为1，则返回 -2<br>Arrays,binarySearch(a,8)  &#x2F;&#x2F;没找到，插入点为4，则返回 -5<br>Arrays.binarySearch(a,5)  &#x2F;&#x2F;找到了！返回下标 1<br>只要返回值 ≥ 0 ，就代表找到了</p>
+<h1 id="Arrays-copyOf"><a href="#Arrays-copyOf" class="headerlink" title="Arrays.copyOf()"></a>Arrays.copyOf()</h1><p>拷贝数组</p>
+<p>源码如下：第一个参数是原数组，第二个参数是拷贝长度，返回值是将原数组拷贝一份返回</p>
+<p>（它的底层其实是调用了System.arrayCopy()方法）</p>
+<p>public static <T> T[] copyOf(T[] original, int newLength) {<br>      return (T[]) copyOf(original, newLength, original.getClass());<br>}</T></p>
+<p>需要注意的是返回值是一个新数组，会改变接收这个新数组的引用的一些属性 </p>
+<p>public static void main(String[] args) {<br>        int[] arr1 &#x3D; new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};<br>        int[] arr2 &#x3D; new int[5];<br>        arr2 &#x3D; Arrays.copyOf(arr1, 10);<br>}</p>
+<p><img src="https://s1.vika.cn/space/2023/04/07/279c23352a594a26bd5d0bcb7dd72fe4"></p>
+<p>Arrays.copyOf()的拷贝是从下标0开始的，如果你想从其他下表开始，可以使用Arrays.copyOfRange()方法</p>
+<h1 id="Arrays-copyOfRange-方法"><a href="#Arrays-copyOfRange-方法" class="headerlink" title="Arrays.copyOfRange()方法"></a>Arrays.copyOfRange()方法</h1><p>&#x2F;&#x2F; from 表示开始位置， to 表示结束位置<br>&#x2F;&#x2F; 复制下标为 ：[from, to)<br>Arrays.copyOfRange(int[] original, int from, int to)</p>
+<p><img src="https://s1.vika.cn/space/2023/04/07/aaf4f12c30fb4dedbd6c930ed269a61f"></p>
+<h1 id="Arrays-fill-int-a-int-val"><a href="#Arrays-fill-int-a-int-val" class="headerlink" title="Arrays.fill(int[] a, int val);"></a>Arrays.fill(int[] a, int val);</h1><p>&#x2F;&#x2F;数组元素的填充<br>&#x2F;&#x2F;将指定的 int 值分配给指定的 int 数组的每个元素。<br>&#x2F;&#x2F;参数：a - 要填充的数组     val – 要存储在数组所有元素中的值</p>
+<h1 id="Arrays-asList"><a href="#Arrays-asList" class="headerlink" title="Arrays.asList( );"></a>Arrays.asList( );</h1><p>&#x2F;&#x2F;会将输入的数据转成一个List集合<br>        例如：List<Integer> list &#x3D; Arrays.asList(3,6,888,99);</Integer></p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2023/04/06/StringBuffer%E6%96%B9%E6%B3%95/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
+                    <img data-src="https://pic2.zhimg.com/v2-ac1dc129d4f18efc871da134186db6fe_r.jpg?source=1940ef5c" data-sizes="auto" alt="StringBuffer方法" class="lazyload">
+                    <h1>StringBuffer方法</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月06日</a>
+            <a><i class="nexmoefont icon-areachart"></i>741 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
         </div>
         
         <article>
             
-                <p>Math.E —— e —— 2.718281828<br>Math.PI —— 圆周率——3.1415926<br>Math.abs() ——计算绝对值<br>Math.cos()——求余弦<br>Math.sin()——求正弦<br>Math.tan()——求正切<br>Math.acos()——求反余弦<br>Math.asin()——求反正弦<br>Math.atan()——求反正切<br>Math.atan2(y,x)——求向量(x,y)与x轴夹角<br>Math.cosh()——计算值的双曲余弦<br>Math.sinh()——计算双曲正弦<br>Math.tanh()——计算双曲正切<br>Math.cbrt()——开立方根<br>Math.sqrt(x)——开平方<br>Math.hypot(x,y)——求sqrt(x<em>x+y</em>y)——在求两点间距离时有用sqrt((x1-x2)^2+(y1-y2)^2)<br>Math.ceil()——天花板，向上取整，返回大的值<br>Math.floor() ——地板，向下取整，返回小的值<br>Math.cosh()——返回 double 值的双曲线余弦。x 的双曲线余弦的定义是 (ex + e-x)&#x2F;2，其中 e 是欧拉数<br>Math. exp(x)——返回e^x的值<br>Math. expm1(x) ——返回e^x - 1的值<br>Math.pow(x,y)——返回x^y的值——x,y只能是double型<br>Math..log(a) ——a的自然对数(底数是e)——只能穿double型并返回double型<br>Math.log10(a) ——a 的底数为10的对数——只能穿double型并返回double型<br>Math.log1p(a)—— a+1的自然对数——只能穿double型并返回double型<br>Math.max(x,y)——求最大值<br>Math.min(x,y)——求最小值<br>Math.nextAfter()——返回与第二个参数方向相邻的第一个参数的浮点数。<br>Math.nextUp(d)——返回与正无穷大方向相邻的 d的浮点值<br>Math.Random()——函数能够返回带正号的double值，取值范围是[0.0,1.0)<br>Math.rint(x)——x取整为它最接近的整数，如果x与两个整数的距离相等，则返回其中为偶数的那一个。<br>Math.round(x)——返回“四舍五入”值。</p>
-<p>Math.scalb(double d, int scaleFactor)——返回 f ×2scaleFactor，其舍入方式如同将一个正确舍入的浮点值乘以 float</p>
-<ul>
-<li>值集合中的一个值</li>
-<li>返回 d 和正无穷大之间与 d 相邻的浮点值 tatic double   nextUp(double d)<br>Math.scalb(float f, int scaleFactor)——返回 f 和正无穷大之间与 f 相邻的浮点值 tatic float    nextUp(float f)——返回第一个参数和第二个参数之间与第一个参数相邻的浮点数<br>Math.signum（）——方法返回指定int值的符号函数（如果指定值为负，则返回-1；如果指定值为零，则返回 0；如果指定值为正，则返回1<br>Math.toDegrees()——将弧度转换角度<br>Math.toRadians()——将角度转换为弧度<br>Math.addExact()——求和，如果结果溢出取值范围，则引发异常<br>Math.substractExact()方法——返回两个参数之差，结果溢出时抛出ArithmeticException<br>Math.incrementExact() 方法 ——返回参数值加一，结果溢出时抛出ArithmeticException<br>Math.decrementExact() 方法 ——返回参数值减一，结果溢出时抛出ArithmeticException<br> Math.multiplyExact() 方法 ——返回两个参数之积，结果溢出时抛出ArithmeticException<br>Math.negateExact() 方法—— 改变参数符号，结果溢出时抛出ArithmeticException<br>Math.floorDiv(1,2)——第一个参数除以第二参数，然后针对结果执行floor操作，返回小于或等于商的整数<br>Math.floorMod()——如果参数的符号相同，则floorMod和％运算符的结果是相同的——如果参数的符号不同，则结果与％运算符不同<br>Math.toIntExact()——long转int<br>Math.nextDown()——返回与负无穷大方向相邻的 f的浮点值。<br> Math.ulp()——。。。</li>
-</ul>
-<p>原网址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ZMYHH323/article/details/90112551">https://blog.csdn.net/ZMYHH323/article/details/90112551</a></p>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2023/03/26/Java%E7%AC%94%E8%AE%B0/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
-                    <img data-src="https://pic4.zhimg.com/v2-56b46cf905f3a34998e2623792f38fc0_r.jpg?source=1940ef5c" data-sizes="auto" alt="Java笔记" class="lazyload">
-                    <h1>Java笔记</h1>
-                </div>
-            
-        </a>
-        
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年03月26日</a>
-            <a><i class="nexmoefont icon-areachart"></i>48 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-        
-        <article>
-            
-                <p>用电脑复制链接：<a target="_blank" rel="noopener" href="https://shimo.im/docs/e1Az49z5lnsRNGqW/">https://shimo.im/docs/e1Az49z5lnsRNGqW/</a> 「java」<br>在浏览器打开，要登录石墨文档，用微信登录即可<br>加载可能需要2~3分钟，请耐心等待</p>
+                <p>StringBuffer是字符串缓存区,当new的时候是在堆内存创建了一个对象,底层是一个长度为16的<br>字符数组当调用添加的方法时,不会再重新创建对象,在不断向原缓冲区添加字符</p>
+<h1 id="查看字符串缓存区容量和长度（字符数）——capacity-x2F-length"><a href="#查看字符串缓存区容量和长度（字符数）——capacity-x2F-length" class="headerlink" title="查看字符串缓存区容量和长度（字符数）——capacity&#x2F;length"></a>查看字符串缓存区容量和长度（字符数）——capacity&#x2F;length</h1><p>StringBuffer x1 &#x3D; new StringBuffer();<br>System.out.println(x1.length());     &#x2F;&#x2F;容器中的字符个数,实际值<br>System.out.println(x1.capacity());   &#x2F;&#x2F;容器的初始容量,理论值</p>
+<h1 id="字符串缓存区——添加（append）"><a href="#字符串缓存区——添加（append）" class="headerlink" title="字符串缓存区——添加（append）"></a>字符串缓存区——添加（append）</h1><p>可以把任意类型数据添加到字符串缓冲区里面,并返回字符串缓冲区本身</p>
+<p>StringBuffer类中重写了toString方法,显示的是对象中的属性值</p>
+<p>StringBuffer x &#x3D; new StringBuffer();<br>x.append(“hello “);<br>x.append(“the “);<br>x.append(“world”);<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——插入（insert）"><a href="#字符串缓存区——插入（insert）" class="headerlink" title="字符串缓存区——插入（insert）"></a>字符串缓存区——插入（insert）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>x.insert(2,”ss”);  &#x2F;&#x2F;在指定位置添加元素<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——替换（replace）"><a href="#字符串缓存区——替换（replace）" class="headerlink" title="字符串缓存区——替换（replace）"></a>字符串缓存区——替换（replace）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>x.replace(3,5,”cc”);&#x2F;&#x2F;替换指定位置字符串（左闭右开）<br>System.out.println(x);</p>
+<h1 id="字符串缓存区——反转（reverse）"><a href="#字符串缓存区——反转（reverse）" class="headerlink" title="字符串缓存区——反转（reverse）"></a>字符串缓存区——反转（reverse）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>System.out.println(x.reverse()); &#x2F;&#x2F;反转字符串</p>
+<h1 id="字符串缓存区——截取（substring）"><a href="#字符串缓存区——截取（substring）" class="headerlink" title="字符串缓存区——截取（substring）"></a>字符串缓存区——截取（substring）</h1><p>StringBuffer x &#x3D; new StringBuffer(“happy”);<br>System.out.println(x.substring(2,6));&#x2F;&#x2F;截取字符串</p>
+<h1 id="字符串缓存区——删除"><a href="#字符串缓存区——删除" class="headerlink" title="字符串缓存区——删除"></a>字符串缓存区——删除</h1><h2 id="删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete"><a href="#删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete" class="headerlink" title="删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete"></a>删除从指定位置开始指定位置结束的内容，并返回删除后的字符缓冲区本身——delete</h2><p>StringBuffer sb &#x3D; new StringBuffer(“hello”);<br>System.out.println(sb.delete(1,2));</p>
+<h2 id="根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt"><a href="#根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt" class="headerlink" title="根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt"></a>根据索引删除掉索引位置上对应的字符，返回删除后的字符缓冲区本身—deleteCharAt</h2><p>StringBuffer sb &#x3D; new StringBuffer(“hello”);<br>System.out.println(sb.deleteCharAt(4));</p>
+<h1 id="字符串缓存区——清空"><a href="#字符串缓存区——清空" class="headerlink" title="字符串缓存区——清空"></a>字符串缓存区——清空</h1><p>方法一：（推荐）<br>StringBuffer x &#x3D; new StringBuffer(“hello”);<br>System.out.println(x.length());<br>System.out.println(x.capacity());<br>x.delete(0,x.length());  &#x2F;&#x2F;清空缓存区<br>System.out.println(x.length());<br>System.out.println(x.capacity());</p>
+<p>方法二：<br>&#x2F;&#x2F;方式二:不建议这种方式清空缓存区，原来的会变成垃圾，浪费内存<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>x1 &#x3D; new StringBuffer();<br>System.out.println(x1.length());<br>System.out.println(x1.capacity());<br>StringBuffer和String相互转换</p>
+<h1 id="StringBuffer转换成String"><a href="#StringBuffer转换成String" class="headerlink" title="StringBuffer转换成String"></a>StringBuffer转换成String</h1><p>通过构造方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x2 &#x3D; new String(x1);<br>System.out.println(x2);</p>
+<p>通过toString方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x3 &#x3D; x1.toString();<br>System.out.println(x3);</p>
+<p>通过截取字符串方法<br>StringBuffer x1 &#x3D; new StringBuffer(“hello”);<br>String x4 &#x3D; x1.substring(0,x1.length());<br>System.out.println(x4);<br>String转化成StringBuffer</p>
+<p>通过构造方法<br>StringBuffer s1 &#x3D; new StringBuffer(“help”);<br>System.out.println(s1);</p>
+<p>通过append方法<br>StringBuffer s2 &#x3D; new StringBuffer();<br>s2.append(“help”);<br>System.out.println(s2);</p>
+<h1 id="当做参数传递时，String和StringBuffer区别"><a href="#当做参数传递时，String和StringBuffer区别" class="headerlink" title="当做参数传递时，String和StringBuffer区别"></a>当做参数传递时，String和StringBuffer区别</h1><p>当做参数传递时原则：基本数据类型的值传递,不改变其值；引用数据类型的值传递,改变其值</p>
+<p>String类虽然是引用数据类型,但是他当作参数传递时和基本数据类型是一样的，不改变其值</p>
+<p>StringBuffer作为参数传递,改变其值</p>
 
             
         </article>
@@ -1009,7 +1538,7 @@
 <script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
 
 
-<script src="/js/app.js?v=1694704557388"></script>
+<script src="/js/app.js?v=1694704895196"></script>
 
 <script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -1026,12 +1555,6 @@
 
 
 <!-- hexo injector body_end start -->
-<script src="/js/clock.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-<script src="/js/search.js"></script>
-
 <script src="https://lib.baomitu.com/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script src="/lib/codeBlock/codeBlockFuction.js"></script>
@@ -1043,6 +1566,12 @@
 <script src="/lib/codeBlock/codeShrink.js"></script>
 
 <link rel="stylesheet" href="/lib/codeBlock/matery.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/clock.js"></script>
 
 <script src="/js/webapp.js"></script>
 <!-- hexo injector body_end end --></body>
