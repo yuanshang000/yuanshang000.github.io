@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1694688004769">
+  <link rel="stylesheet" href="/css/style.css?v=1694700464609">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -56,7 +56,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div class="nexmoe-count-item"><span>文章</span>12 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
+        <div class="nexmoe-count-item"><span>文章</span>13 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
         <div class="nexmoe-count-item"><span>标签</span>5<div class="item-radius"></div><div class="item-radius item-right"></div></div>
         <div class="nexmoe-count-item"><span>分类</span>4<div class="item-radius"></div><div class="item-radius item-right"></div></div>
     </div>
@@ -165,7 +165,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">12</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -201,7 +201,7 @@
         <a href="/2023/09/14/Git/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
-                    <img data-src="https://s1.vika.cn/space/2023/09/14/c4e6acd2a2994f17b04c65b828b5c0d9" data-sizes="auto" alt="Git" class="lazyload">
+                    <img data-src="https://s1.vika.cn/space/2023/09/14/2448948a41d9429586939959c626c1bd" data-sizes="auto" alt="Git" class="lazyload">
                     <h1>Git</h1>
                 </div>
             
@@ -229,7 +229,6 @@
 <p>简单说就是用于管理多人协同开发项目的技术。</p>
 <p>没有进行版本控制或者版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件源代码的安全性，以及软件的整合等问题。</p>
 <p>无论是工作还是学习，或者是自己做笔记，都经历过这样一个阶段！我们就迫切需要一个版本控制工具！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0C4qeLxMgoTg9B154ibahsUaibiaV7DgH9GTFQZj3Kyhf5fxrj6G2U5HFg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>多人开发就必须要使用版本控制！</p>
 <h2 id="常见的版本控制工具"><a href="#常见的版本控制工具" class="headerlink" title="常见的版本控制工具"></a>常见的版本控制工具</h2><p>我们学习的东西，一定是当下最流行的！</p>
 <p>主流的版本控制器有如下这些：</p>
@@ -244,18 +243,14 @@
 <p>版本控制产品非常的多（Perforce、Rational ClearCase、RCS（GNU Revision Control System）、Serena Dimention、SVK、BitKeeper、Monotone、Bazaar、Mercurial、SourceGear Vault），现在影响力最大且使用最广泛的是Git与SVN</p>
 <h2 id="版本控制分类"><a href="#版本控制分类" class="headerlink" title="版本控制分类"></a>版本控制分类</h2><p><strong>1、本地版本控制</strong></p>
 <p>记录文件每次的更新，可以对每个版本做一个快照，或是记录补丁文件，适合个人用，如RCS。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0Dg3fHrbPqbNEOMO9GTjFhVaukMZWx54icS7eS2x8A7BEu0VB9ibwEhzQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p><strong>2、集中版本控制  SVN</strong></p>
 <p>所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p00V4uLaibxtZI9RLpq7tkSdlWiaF92AVeZ0ib9DicqBkS2poo5u8sEU2mCQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>所有的版本数据都存在服务器上，用户的本地只有自己以前所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以定期备份。代表产品：SVN、CVS、VSS</p>
 <p><strong>3、分布式版本控制 	Git</strong></p>
 <p>每个人都拥有全部的代码！安全隐患！</p>
 <p>所有版本信息仓库全部同步到本地的每个用户，这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。</p>
 <p>不会因为服务器损坏或者网络问题，造成不能工作的情况！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0ev8Q7qXjsTfeSwFexdA4tGjFAiaVEKQzAHdGcINXILKflI2cfk9BiawQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <h2 id="Git与SVN的主要区别"><a href="#Git与SVN的主要区别" class="headerlink" title="Git与SVN的主要区别"></a>Git与SVN的主要区别</h2><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0qtEIDr2NG6rOGg1UgDu5c3ffRR8P7FD5D8BPLUEXp0hQoL7qfp3I6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件！</p>
 <p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
 <p>**<br>**</p>
@@ -266,17 +261,14 @@
 <p>到了 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper 的权力。这就迫使 Linux 开源社区(特别是 Linux 的缔造者 Linus Torvalds)基于使用 BitKeeper 时的经验教训，开发出自己的版本系统。（2周左右！） 也就是后来的 Git！</p>
 <p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
 <p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代 BitKeeper！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0XGLbyFDUiccCsib4L9Vkg7neJVWupfScbrjd7zm7apC8eYTzgQztNAnA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>Linux和Git之父李纳斯·托沃兹（Linus Benedic Torvalds）1969、芬兰</p>
 <p>Git环境配置</p>
 <h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><p>打开 [git官网] <a target="_blank" rel="noopener" href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%88%E6%9C%AC%E3%80%82">https://git-scm.com/，下载git对应操作系统的版本。</a></p>
 <p>所有东西下载慢的话就可以去找镜像！</p>
 <p>官网下载太慢，我们可以使用淘宝镜像下载：<a target="_blank" rel="noopener" href="http://npm.taobao.org/mirrors/git-for-windows/">http://npm.taobao.org/mirrors/git-for-windows/</a></p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0IXktseBR7lpvVF4bibFwiaibnGxkDm0wYicPIiaZxcUe2KuibAHj83MiaWFSQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>下载对应的版本即可安装！</p>
 <p>安装：无脑下一步即可！安装完毕就可以使用了！</p>
 <h2 id="启动Git"><a href="#启动Git" class="headerlink" title="启动Git"></a>启动Git</h2><p>安装成功后在开始菜单中会有Git项，菜单下有3个程序：任意文件夹下右键也可以看到对应的程序！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0jaiaAfr2pAfWtFX57kGYqR3SlNxDlAZDkCU6IOB1YAicKxHib5yGbv9zQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p><strong>Git Bash：</strong>Unix与Linux风格的命令行，使用最多，推荐最多</p>
 <p><strong>Git CMD：</strong>Windows风格的命令行</p>
 <p><strong>Git GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
@@ -300,24 +292,20 @@
 <p>15）、#表示注释</p>
 <h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><p>所有的配置文件，其实都保存在本地！</p>
 <p>查看配置 git config -l</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0GJANibs86DwYqoADdgZySGibmafR8p1XBq6ZG3t0J2wSg9icrIVVQo6dQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>查看不同级别的配置文件：</p>
-<h2 id=""><a href="#" class="headerlink" title="- "></a>- </h2><h2 id="-1"><a href="#-1" class="headerlink" title="- "></a>- </h2><p>- </p>
+<h2 id><a href="#" class="headerlink" title="- "></a>- </h2><h2 id="-1"><a href="#-1" class="headerlink" title="- "></a>- </h2><p>- </p>
 <pre><code>#查看系统configgit config --system --list　　#查看当前用户（global）配置git config --global  --list
 </code></pre>
 <p><strong>Git相关的配置文件：</strong></p>
 <p>1）、Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   –system 系统级</p>
 <p>2）、C:\Users\Administrator\ .gitconfig   只适用于当前登录用户的配置  –global 全局</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0hcJS0rxj3qoCVvfDKh3WxwQJlSV3P15EIZuejraOwXLdic6NCB8X8oQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>这里可以直接编辑配置文件，通过命令设置后会响应到这里。</p>
 <h2 id="设置用户名与邮箱（用户标识，必要）"><a href="#设置用户名与邮箱（用户标识，必要）" class="headerlink" title="设置用户名与邮箱（用户标识，必要）"></a>设置用户名与邮箱（用户标识，必要）</h2><p>当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
 <h2 id="-2"><a href="#-2" class="headerlink" title="- "></a>- </h2><pre><code>git config --global user.name &quot;kuangshen&quot;  #名称git config --global user.email 24736743@qq.com   #邮箱
 </code></pre>
 <p>只需要做一次这个设置，如果你传递了–global 选项，因为Git将总是会使用该信息来处理你在系统中所做的一切操作。如果你希望在一个特定的项目中使用不同的名称或e-mail地址，你可以在该项目中运行该命令而不要–global选项。总之–global为全局配置，不加为某个项目的特定配置。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0zQZY37q1iaG0n7445X8YgPVvZH5AqyGvT4RgmoyIcZlJWiaLcxyDgSdQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>Git基本理论（重要）</p>
 <h2 id="三个区域"><a href="#三个区域" class="headerlink" title="三个区域"></a>三个区域</h2><p>Git本地有三个工作区域：工作目录（Working Directory）、暂存区(Stage&#x2F;Index)、资源库(Repository或Git Directory)。如果在加上远程的git仓库(Remote Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下：</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0NJ4L9OPI9ia1MmibpvDd6cSddBdvrlbdEtyEOrh4CKnWVibyfCHa3lzXw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <ul>
 <li>Workspace：工作区，就是你平时存放项目代码的地方</li>
 <li>Index &#x2F; Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息</li>
@@ -325,7 +313,6 @@
 <li>Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换</li>
 </ul>
 <p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0icz6X2aibIgUWzHxtwX8kicPCKpDrsiaPzZk04OlI2bzlydzicBuXTJvLEQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <ul>
 <li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间。</li>
 <li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间。</li>
@@ -339,11 +326,9 @@
 <p>２、将需要进行版本管理的文件放入暂存区域；</p>
 <p>３、将暂存区域的文件提交到git仓库。</p>
 <p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p09iaOhl0dACfLrMwNbDzucGQ30s3HnsiaczfcR6dC9OehicuwibKuHjRlzg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>Git项目搭建</p>
 <h2 id="创建工作目录与常用指令"><a href="#创建工作目录与常用指令" class="headerlink" title="创建工作目录与常用指令"></a>创建工作目录与常用指令</h2><p>工作目录（WorkSpace)一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</p>
 <p>日常使用只要记住下图6个命令：</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0AII6YVooUzibpibzJnoOHHXUsL3f9DqA4horUibfcpEZ88Oyf2gQQNR6w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <h2 id="本地仓库搭建"><a href="#本地仓库搭建" class="headerlink" title="本地仓库搭建"></a>本地仓库搭建</h2><p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p>
 <p>1、创建全新的仓库，需要用GIT管理的项目的根目录执行：</p>
 <h2 id="-3"><a href="#-3" class="headerlink" title="- "></a>- </h2><pre><code># 在当前目录新建一个Git代码库$ git init
@@ -380,25 +365,17 @@
 <p>使用码云</p>
 <h2 id="github-是有墙的，比较慢，在国内的话，我们一般使用-gitee-，公司中有时候会搭建自己的gitlab服务器"><a href="#github-是有墙的，比较慢，在国内的话，我们一般使用-gitee-，公司中有时候会搭建自己的gitlab服务器" class="headerlink" title="github 是有墙的，比较慢，在国内的话，我们一般使用 gitee ，公司中有时候会搭建自己的gitlab服务器"></a>github 是有墙的，比较慢，在国内的话，我们一般使用 gitee ，公司中有时候会搭建自己的gitlab服务器</h2><p>这个其实可以作为大家未来找工作的一个重要信息！</p>
 <p>1、注册登录码云，完善个人信息</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0ebAqhteskG4GHwD01bX4lXYmxlmMGn8PRqn4aCXfaQdp3SnbBHdibtQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>2、设置本机绑定SSH公钥，实现免密码登录！（免密码登录，这一步挺重要的，码云是远程仓库，我们是平时工作在本地仓库！)</p>
 <h2 id="-12"><a href="#-12" class="headerlink" title="- "></a>- </h2><p>- </p>
 <pre><code># 进入 C:\Users\Administrator\.ssh 目录# 生成公钥ssh-keygen
 </code></pre>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0YlK4ibQ0EMs3LmRmdiahpma8ssTQedkhyShNkibTyFBvaZWicicTfNicWQIA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>3、将公钥信息public key 添加到码云账户中即可！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0I5Zicrm4PEbnox9L5wjCPtPybCyrKI1JOkRWCYIY5zsX4FvI77LXXmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>4、使用码云创建一个自己的仓库！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0FSIwJb9g6Qbp99jY605xdPfh3N4l2rGpD44d6NCcdibankBUL60uODg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>许可证：开源是否可以随意转载，开源但是不能商业使用，不能转载，…  限制！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0S96XfGogNWVqRAexeybT7DXdyQhfcYJ1oEAgaH1RibRU0WZE0eczdxw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>克隆到本地！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0PyKfGFd8UHSGIRbVLkXH5icQsgxh6K2RPibYeUER54UzuNVAYsgxXcfA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>IDEA中集成Git</p>
 <p>1、新建项目，绑定git。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0D8LPGu2SNKXD01IMqDaSkBeP8ibtvnasBYiaReyuZWAl0EjEib8IYf7cQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>注意观察idea中的变化</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0Cs93BiaOia1Sdk8icdH7vQzPfzIjuoTNYquKzYtrEe5mklhg2b7KOYsow/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>2、修改文件，使用IDEA操作git。</p>
 <ul>
 <li>添加到暂存区</li>
@@ -406,14 +383,11 @@
 <li>push到远程仓库</li>
 </ul>
 <p>3、提交测试</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0tERIszdgLVlUWamyRapfN74aR8XeGFV2OYWiaeR9CkYlfoBefRh2AIA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>这些都是单个人的操作！</p>
 <p>学习的方式最重要！学会学习！我上课的更多时候都是在教大家去学习一种理念和思想（学习方式）</p>
 <p>有道无术、术尚可求。有术无道、止于术！</p>
 <p>真正的教学，授人以渔！</p>
 <h2 id="说明：GIT分支"><a href="#说明：GIT分支" class="headerlink" title="说明：GIT分支"></a>说明：GIT分支</h2><p>分支在GIT中相对较难，分支就是科幻电影里面的平行宇宙，如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，我们就需要处理一些问题了！</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0BOGzaG4QTc4JXO0hSlwcNtujNzAvxeibSrajLYLCT6otNnHDV9xYWwA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0Ayn87woxfepOhSlUj4FQTFUsia4ic0j6aQy4Tz32PRuJ0HSVeGeUzURA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>git分支中常用指令：</p>
 <h2 id="-13"><a href="#-13" class="headerlink" title="- "></a>- </h2><h2 id="-14"><a href="#-14" class="headerlink" title="- "></a>- </h2><h2 id="-15"><a href="#-15" class="headerlink" title="- "></a>- </h2><h2 id="-16"><a href="#-16" class="headerlink" title="- "></a>- </h2><h2 id="-17"><a href="#-17" class="headerlink" title="- "></a>- </h2><h2 id="-18"><a href="#-18" class="headerlink" title="- "></a>- </h2><h2 id="-19"><a href="#-19" class="headerlink" title="- "></a>- </h2><h2 id="-20"><a href="#-20" class="headerlink" title="- "></a>- </h2><h2 id="-21"><a href="#-21" class="headerlink" title="- "></a>- </h2><h2 id="-22"><a href="#-22" class="headerlink" title="- "></a>- </h2><p>- </p>
 <pre><code># 列出所有本地分支git branch
@@ -425,14 +399,35 @@
 # 删除远程分支$ git push origin --delete [branch-name]$ git branch -dr [remote/branch]
 </code></pre>
 <p>IDEA中操作</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p0wHNIYeTHC8aHGASoDyZO64QicslqiaMb1OJ1Z1LPoic3LBGyDIYBa7XXw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
 <p>如果同一个文件在合并分支时都被修改了则会引起冲突：解决的办法是我们可以修改冲突文件后重新提交！选择要保留他的代码还是你的代码！</p>
 <p>master主分支应该非常稳定，用来发布新版本，一般情况下不允许在上面工作，工作一般情况下在新建的dev分支上工作，工作完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
 <p>作业练习：找一个小伙伴，一起搭建一个远程仓库，来练习Git！</p>
 <p>1、不要把Git想的很难，工作中多练习使用就自然而然的会了！</p>
 <p>2、Git的学习也十分多，看完我的Git教程之后，可以多去思考，总结到自己博客！</p>
-<h2 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h2><p><img data-fancybox="gallery" data-sizes="auto" data-src="C:\Users\lala\AppData\Roaming\Typora\typora-user-images\image-20230913220207516.png" alt="image-20230913220207516" class="lazyload"></p>
-
+<h2 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h2>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2023/09/14/TuChuang/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 24.305555555555554%;">
+                    <img data-src="https://ts1.cn.mm.bing.net/th/id/R-C.f78864c493409ffffcf16aa7cca791ae?rik=%2f15kd42X8%2fPrIA&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f9%2f0f%2f921703de7a.jpg&ehk=ZkVZRYMpe%2bLl8WTnKLQ3WQgMTEk6ZqHrphpYmeKT3eo%3d&risl=1&pid=ImgRaw&r=0" data-sizes="auto" alt="TuChuang" class="lazyload">
+                    <h1>TuChuang</h1>
+                </div>
+            
+        </a>
+        
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年09月14日</a>
+            <a><i class="nexmoefont icon-areachart"></i>0 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+        
+        <article>
+            
+                
             
         </article>
     </div>
@@ -709,7 +704,7 @@
 <p><img src="https://s1.vika.cn/space/2023/04/13/642deceac3e1451ebbbf980d98a4a1c8"></p>
 <h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下："><a href="#1-ArrayList-类位于-java-util-包中，使用前需要引入它，语法格式如下：" class="headerlink" title="1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下："></a>1.ArrayList 类位于 java.util 包中，使用前需要引入它，语法格式如下：</h2><p>代码如下（示例）：</p>
 <p>import java.util.ArrayList; &#x2F;&#x2F; 引入 ArrayList 类</p>
-<p>ArrayList<E> objectName &#x3D;new ArrayList&lt;&gt;();　 &#x2F;&#x2F; 初始化<br>E: 泛型数据类型，用于设置 objectName 的数据类型，只能为引用数据类型。<br>objectName: 对象名</p>
+<p>ArrayList<E> objectName &#x3D;new ArrayList&lt;&gt;();　 &#x2F;&#x2F; 初始化<br>E: 泛型数据类型，用于设置 objectName 的数据类型，只能为引用数据类型。<br>objectName: 对象名</E></p>
 <h1 id="2-添加元素"><a href="#2-添加元素" class="headerlink" title="2.添加元素"></a>2.添加元素</h1><p>ArrayList 类提供了很多有用的方法，添加元素到 ArrayList 可以使用 add() 方法 。 添加并遍历元素如下</p>
 <p>package Demo;</p>
 <p>import java.util.ArrayList;</p>
@@ -718,28 +713,28 @@
 <p>[迪丽热巴, 古力娜扎, 马儿扎哈]<br>迪丽热巴<br>古力娜扎<br>马儿扎哈</p>
 <h1 id="3-删除元素"><a href="#3-删除元素" class="headerlink" title="3.删除元素"></a>3.删除元素</h1><p>如果要删除 ArrayList 中的元素可以使用 remove() 方法：</p>
 <p>import java.util.ArrayList;</p>
-<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        sites.remove(3); &#x2F;&#x2F; 删除第四个元素<br>        System.out.println(sites);<br>    }<br>}<br>以上实例，执行输出结果为：</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        sites.remove(3); &#x2F;&#x2F; 删除第四个元素<br>        System.out.println(sites);<br>    }<br>}<br>以上实例，执行输出结果为：</String></String></p>
 <p>[Google, Runoob, Taobao]</p>
 <h1 id="4-计算大小"><a href="#4-计算大小" class="headerlink" title="4.计算大小"></a>4.计算大小</h1><p>import java.util.ArrayList;</p>
-<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        System.out.println(sites.size());<br>    }<br>}<br>以上实例，执行输出结果为：</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Google”);<br>        sites.add(“Runoob”);<br>        sites.add(“Taobao”);<br>        sites.add(“Weibo”);<br>        System.out.println(sites.size());<br>    }<br>}<br>以上实例，执行输出结果为：</String></String></p>
 <p>4</p>
 <h1 id="5-其他的引用类型"><a href="#5-其他的引用类型" class="headerlink" title="5.其他的引用类型"></a>5.其他的引用类型</h1><p>ArrayList 中的元素实际上是对象，在以上实例中，数组列表元素都是字符串 String 类型。</p>
-<p>如果我们要存储其他类型，而 <E> 只能为引用数据类型，这时我们就需要使用到基本类型的包装类。</p>
+<p>如果我们要存储其他类型，而 <E> 只能为引用数据类型，这时我们就需要使用到基本类型的包装类。</E></p>
 <p>基本类型对应的包装类表如下：</p>
 <p><img src="https://s1.vika.cn/space/2023/04/13/2e347c9ba9e4481fa34e5f620d9dafeb"></p>
 <p>此外，BigInteger、BigDecimal 用于高精度的运算，BigInteger 支持任意精度的整数，也是引用类型，但它们没有相对应的基本类型。</p>
-<p>rrayList<Integer> li&#x3D;new Arraylist&lt;&gt;();     &#x2F;&#x2F; 存放整数元素<br>ArrayList<Character> li&#x3D;new Arraylist&lt;&gt;();   &#x2F;&#x2F; 存放字符元素<br>以下实例使用 ArrayList 存储数字(使用 Integer 类型):</p>
+<p>rrayList<Integer> li&#x3D;new Arraylist&lt;&gt;();     &#x2F;&#x2F; 存放整数元素<br>ArrayList<Character> li&#x3D;new Arraylist&lt;&gt;();   &#x2F;&#x2F; 存放字符元素<br>以下实例使用 ArrayList 存储数字(使用 Integer 类型):</Character></Integer></p>
 <p>import java.util.ArrayList;</p>
-<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(10);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(25);<br>        for (int i : myNumbers) {<br>            System.out.println(i);<br>        }<br>    }<br>}<br> 以下是输出结果</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(10);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(25);<br>        for (int i : myNumbers) {<br>            System.out.println(i);<br>        }<br>    }<br>}<br> 以下是输出结果</Integer></Integer></p>
 <p>10<br>15<br>20<br>25</p>
 <h1 id="ArrayList-排序"><a href="#ArrayList-排序" class="headerlink" title="ArrayList 排序"></a>ArrayList 排序</h1><p>Collections 类也是一个非常有用的类，位于 java.util 包中，提供的 sort() 方法可以对字符或数字列表进行排序。</p>
 <p>以下实例对字母进行排序：</p>
 <p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
-<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Taobao”);<br>        sites.add(“Wiki”);<br>        sites.add(“Runoob”);<br>        sites.add(“Weibo”);<br>        sites.add(“Google”);<br>        Collections.sort(sites);  &#x2F;&#x2F; 字母排序<br>        for (String i : sites) {<br>            System.out.println(i);<br>        }<br>    }<br>}</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<String> sites &#x3D; new ArrayList<String>();<br>        sites.add(“Taobao”);<br>        sites.add(“Wiki”);<br>        sites.add(“Runoob”);<br>        sites.add(“Weibo”);<br>        sites.add(“Google”);<br>        Collections.sort(sites);  &#x2F;&#x2F; 字母排序<br>        for (String i : sites) {<br>            System.out.println(i);<br>        }<br>    }<br>}</String></String></p>
 <p>执行结果</p>
 <p>Google<br>Runoob<br>Taobao<br>Weibo<br>Wiki<br>以下实例对数字进行排序：</p>
 <p>import java.util.ArrayList;<br>import java.util.Collections;  &#x2F;&#x2F; 引入 Collections 类</p>
-<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(33);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(34);<br>        myNumbers.add(8);<br>        myNumbers.add(12);</p>
+<p>public class RunoobTest {<br>    public static void main(String[] args) {<br>        ArrayList<Integer> myNumbers &#x3D; new ArrayList<Integer>();<br>        myNumbers.add(33);<br>        myNumbers.add(15);<br>        myNumbers.add(20);<br>        myNumbers.add(34);<br>        myNumbers.add(8);<br>        myNumbers.add(12);</Integer></Integer></p>
 <pre><code>    Collections.sort(myNumbers);  // 数字排序
 
     for (int i : myNumbers) &#123;
@@ -998,7 +993,7 @@
 <h1 id="Arrays-copyOf"><a href="#Arrays-copyOf" class="headerlink" title="Arrays.copyOf()"></a>Arrays.copyOf()</h1><p>拷贝数组</p>
 <p>源码如下：第一个参数是原数组，第二个参数是拷贝长度，返回值是将原数组拷贝一份返回</p>
 <p>（它的底层其实是调用了System.arrayCopy()方法）</p>
-<p>public static <T> T[] copyOf(T[] original, int newLength) {<br>      return (T[]) copyOf(original, newLength, original.getClass());<br>}</p>
+<p>public static <T> T[] copyOf(T[] original, int newLength) {<br>      return (T[]) copyOf(original, newLength, original.getClass());<br>}</T></p>
 <p>需要注意的是返回值是一个新数组，会改变接收这个新数组的引用的一些属性 </p>
 <p>public static void main(String[] args) {<br>        int[] arr1 &#x3D; new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};<br>        int[] arr2 &#x3D; new int[5];<br>        arr2 &#x3D; Arrays.copyOf(arr1, 10);<br>}</p>
 <p><img src="https://s1.vika.cn/space/2023/04/07/279c23352a594a26bd5d0bcb7dd72fe4"></p>
@@ -1006,7 +1001,7 @@
 <h1 id="Arrays-copyOfRange-方法"><a href="#Arrays-copyOfRange-方法" class="headerlink" title="Arrays.copyOfRange()方法"></a>Arrays.copyOfRange()方法</h1><p>&#x2F;&#x2F; from 表示开始位置， to 表示结束位置<br>&#x2F;&#x2F; 复制下标为 ：[from, to)<br>Arrays.copyOfRange(int[] original, int from, int to)</p>
 <p><img src="https://s1.vika.cn/space/2023/04/07/aaf4f12c30fb4dedbd6c930ed269a61f"></p>
 <h1 id="Arrays-fill-int-a-int-val"><a href="#Arrays-fill-int-a-int-val" class="headerlink" title="Arrays.fill(int[] a, int val);"></a>Arrays.fill(int[] a, int val);</h1><p>&#x2F;&#x2F;数组元素的填充<br>&#x2F;&#x2F;将指定的 int 值分配给指定的 int 数组的每个元素。<br>&#x2F;&#x2F;参数：a - 要填充的数组     val – 要存储在数组所有元素中的值</p>
-<h1 id="Arrays-asList"><a href="#Arrays-asList" class="headerlink" title="Arrays.asList( );"></a>Arrays.asList( );</h1><p>&#x2F;&#x2F;会将输入的数据转成一个List集合<br>        例如：List<Integer> list &#x3D; Arrays.asList(3,6,888,99);</p>
+<h1 id="Arrays-asList"><a href="#Arrays-asList" class="headerlink" title="Arrays.asList( );"></a>Arrays.asList( );</h1><p>&#x2F;&#x2F;会将输入的数据转成一个List集合<br>        例如：List<Integer> list &#x3D; Arrays.asList(3,6,888,99);</Integer></p>
 
             
         </article>
@@ -1140,30 +1135,6 @@
 <li>返回 d 和正无穷大之间与 d 相邻的浮点值 tatic double   nextUp(double d)<br>Math.scalb(float f, int scaleFactor)——返回 f 和正无穷大之间与 f 相邻的浮点值 tatic float    nextUp(float f)——返回第一个参数和第二个参数之间与第一个参数相邻的浮点数<br>Math.signum（）——方法返回指定int值的符号函数（如果指定值为负，则返回-1；如果指定值为零，则返回 0；如果指定值为正，则返回1<br>Math.toDegrees()——将弧度转换角度<br>Math.toRadians()——将角度转换为弧度<br>Math.addExact()——求和，如果结果溢出取值范围，则引发异常<br>Math.substractExact()方法——返回两个参数之差，结果溢出时抛出ArithmeticException<br>Math.incrementExact() 方法 ——返回参数值加一，结果溢出时抛出ArithmeticException<br>Math.decrementExact() 方法 ——返回参数值减一，结果溢出时抛出ArithmeticException<br> Math.multiplyExact() 方法 ——返回两个参数之积，结果溢出时抛出ArithmeticException<br>Math.negateExact() 方法—— 改变参数符号，结果溢出时抛出ArithmeticException<br>Math.floorDiv(1,2)——第一个参数除以第二参数，然后针对结果执行floor操作，返回小于或等于商的整数<br>Math.floorMod()——如果参数的符号相同，则floorMod和％运算符的结果是相同的——如果参数的符号不同，则结果与％运算符不同<br>Math.toIntExact()——long转int<br>Math.nextDown()——返回与负无穷大方向相邻的 f的浮点值。<br> Math.ulp()——。。。</li>
 </ul>
 <p>原网址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ZMYHH323/article/details/90112551">https://blog.csdn.net/ZMYHH323/article/details/90112551</a></p>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2023/04/02/%E5%9B%BE%E6%96%87%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;">
-                    <img data-src="https://n.sinaimg.cn/sinakd10101/777/w801h776/20200405/c21a-irtymmw1298407.jpg" data-sizes="auto" alt="图文转换工具" class="lazyload">
-                    <h1>图文转换工具</h1>
-                </div>
-            
-        </a>
-        
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月02日</a>
-            <a><i class="nexmoefont icon-areachart"></i>95 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-        
-        <article>
-            
-                <p>用浏览器打开：<a target="_blank" rel="noopener" href="https://www.gaituya.com/wenzi/">https://www.gaituya.com/wenzi/</a><br>支持图片转成大多数文件形式，包括图片转文字，也支持文档转图片<br>注意：图片转文字有些乱，但一般字体全部都转成功的了，图片转文字最好对一下，对到没有的字，应该在后面可以找到，应该不需要自己打。</p>
 
             
         </article>
@@ -1888,7 +1859,7 @@
 <script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
 
 
-<script src="/js/app.js?v=1694688004770"></script>
+<script src="/js/app.js?v=1694700464609"></script>
 
 <script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 <script>
@@ -1905,6 +1876,8 @@
 
 
 <!-- hexo injector body_end start -->
+<script src="/js/clock.js"></script>
+
 <script src="https://lib.baomitu.com/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script src="/lib/codeBlock/codeBlockFuction.js"></script>
@@ -1916,8 +1889,6 @@
 <script src="/lib/codeBlock/codeShrink.js"></script>
 
 <link rel="stylesheet" href="/lib/codeBlock/matery.css">
-
-<script src="/js/clock.js"></script>
 
 <script src="/js/webapp.js"></script>
 
