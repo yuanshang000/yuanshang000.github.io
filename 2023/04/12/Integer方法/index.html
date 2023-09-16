@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <meta name="baidu-site-verification" content="code-J1Qg17G6wT" />
+  <title>Integer方法 - 源殇</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+    <!-- Site Verification -->
+    <meta name="baidu-site-verification" content="code-J1Qg17G6wT" />
+
+  <link rel="shortcut icon" href="/images/head/head.jpg" type="image/png" />
+  <meta name="description" content="1、Integer(int value)和Integer(String s)构造方法，肯定常用。     Integer a1 &#x3D; new Integer(100); &#x2F;&#x2F;传入的是int类型     Integer a2 &#x3D; new Integer(&quot;200&quot;); &#x2F;&#x2F; 传入的是String类型     System.out.println(a1);  &#x2F;&#x2F;100     Sy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Integer方法">
+<meta property="og:url" content="http://example.com/2023/04/12/Integer%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="源殇">
+<meta property="og:description" content="1、Integer(int value)和Integer(String s)构造方法，肯定常用。     Integer a1 &#x3D; new Integer(100); &#x2F;&#x2F;传入的是int类型     Integer a2 &#x3D; new Integer(&quot;200&quot;); &#x2F;&#x2F; 传入的是String类型     System.out.println(a1);  &#x2F;&#x2F;100     Sy">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-12T05:23:40.000Z">
+<meta property="article:modified_time" content="2023-04-13T05:37:30.221Z">
+<meta property="article:author" content="源殇">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://lib.baomitu.com/highlight.js/9.15.8/styles/atom-one-dark.min.css" crossorigin>
+  <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css">
+  <link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+  <link rel="stylesheet" href="/lib/fancybox/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://lib.baomitu.com/justifiedGallery/3.8.1/css/justifiedGallery.min.css">
+  
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2421060_8z08qcz5sq3.css">
+  
+  <link rel="stylesheet" href="/css/style.css?v=1694887031797">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.f78864c493409ffffcf16aa7cca791ae?rik=%2f15kd42X8%2fPrIA&amp;riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f9%2f0f%2f921703de7a.jpg&amp;ehk=ZkVZRYMpe%2bLl8WTnKLQ3WQgMTEk6ZqHrphpYmeKT3eo%3d&amp;risl=1&amp;pid=ImgRaw&amp;r=0)"></div>
+    <div class="nexmoe-small" style="background-image: url(/images/background/lihui.png)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="源殇" class="mdui-btn mdui-btn-icon"><img src="/images/head/head.jpg" alt="源殇"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="源殇">
+            <img src="/images/head/head.jpg" alt="源殇" alt="源殇">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div class="nexmoe-count-item"><span>文章</span>12 <div class="item-radius"></div><div class="item-radius item-right"></div> </div>
+        <div class="nexmoe-count-item"><span>标签</span>5<div class="item-radius"></div><div class="item-radius item-right"></div></div>
+        <div class="nexmoe-count-item"><span>分类</span>5<div class="item-radius"></div><div class="item-radius item-right"></div></div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-meishi"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-hanbao1"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  
+<!-- 站内搜索 -->
+
+<div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search" >
+        <form id="search-form">
+            <label><input type="text" id="local-search-input" name="q" results="0" placeholder="站内搜索" class="input form-control" autocomplete="off" autocorrect="off"/></label>
+            <!-- 清空/重置搜索框 -->
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+        </form>
+    </div>
+    <div id="local-search-result"></div> <!-- 搜索结果区 -->
+    <!-- <p class='no-result'></p> 无匹配时显示，注意在 CSS 中设置默认隐藏 -->
+</div>
+
+
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://github.com/yuanshang000/yuanshang000.github.io" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/Git/">Git</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/java编程方法/">java编程方法</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/博客/">博客</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/图片提取文字/">图片提取文字</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/编程语言/">编程语言</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">12</span></li></ul>
+    </div>
+  </div>
+
+
+<style>
+.nexmoe-widget .archive-list-count{
+	position : absolute;
+	right: 15px;
+	top:9px;
+	color: #DDD;
+}
+</style>
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2023 源殇
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/tangyuxian/hexo-theme-tangyuxian" target="_blank">Tangyuxian</a><br/>
+        <a href="http://beian.miit.gov.cn" target="_blank">666</a><br/>
+        
+        
+    </div>
+
+</div><!-- .nexmoe-drawer -->
+
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    
+        <div class="nexmoe-post-cover" style="padding-bottom: NaN%;">
+            <img data-src="https://n.sinaimg.cn/sinakd10101/530/w700h630/20200405/b018-irtymmw1298171.jpg" data-sizes="auto" alt="Integer方法" class="lazyload">
+            <h1>Integer方法</h1>
+        </div>
+    
+
+        <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2023年04月12日</a>
+    <a><i class="nexmoefont icon-areachart"></i>2.9k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 14 分钟</a>
+</div>
+
+        <div class="nexmoe-post-right">
+            
+        </div>
+
+        <article>
+            <h1 id="1、Integer-int-value-和Integer-String-s"><a href="#1、Integer-int-value-和Integer-String-s" class="headerlink" title="1、Integer(int value)和Integer(String s)"></a>1、Integer(int value)和Integer(String s)</h1><p>构造方法，肯定常用。</p>
+<pre><code>    Integer a1 = new Integer(100); //传入的是int类型
+    Integer a2 = new Integer(&quot;200&quot;); // 传入的是String类型
+    System.out.println(a1);  //100
+    System.out.println(a2);  //200
+
+     //Integer a3 = new Integer(&quot;123abc&quot;);  //异常：java.lang.NumberFormatException，数字格式化异常
+
+    //自java5开始，有了自动装箱和自动拆箱，我们不再使用构造方法了
+    Integer a4 = 300;
+
+    //Integer a5 = &quot;400&quot;;  //这是错误的写法
+    System.out.println(a4);  //300
+</code></pre>
+<h1 id="Integer-compare（int，int）"><a href="#Integer-compare（int，int）" class="headerlink" title="Integer.compare（int，int）"></a>Integer.compare（int，int）</h1><p>比较两个 int数字值。<br>        System.out.println(Integer.compare(5, 6));&#x2F;&#x2F; 左面小于右面，返回一个负数<br>        System.out.println(Integer.compare(6, 6));&#x2F;&#x2F; 左面等于右面，返回一个0<br>        System.out.println(Integer.compare(56, 5));&#x2F;&#x2F; 左面大于右面，返回一个正数1</p>
+<h1 id="Integer-compareTo-int-用对象名调用"><a href="#Integer-compareTo-int-用对象名调用" class="headerlink" title="Integer.compareTo(int) ,用对象名调用"></a>Integer.compareTo(int) ,用对象名调用</h1><p>数字比较两个 Integer对象。<br>        Integer i1 &#x3D; 1;&#x2F;&#x2F; 要比较的数<br>        i1.compareTo(8);&#x2F;&#x2F; 8是参数<br>        System.out.println(i1.compareTo(8));&#x2F;&#x2F; 参数大于要比较的数。返回-1<br>        System.out.println(i1.compareTo(1));&#x2F;&#x2F; 参数等于要比较的数，等于0<br>        System.out.println(i1.compareTo(0));&#x2F;&#x2F; 参数小于要比较的数返回1</p>
+<h1 id="Integer-compareUnsigned-int-int"><a href="#Integer-compareUnsigned-int-int" class="headerlink" title="Integer.compareUnsigned(int, int)"></a>Integer.compareUnsigned(int, int)</h1><p>比较两个 int值，以数值方式将值视为无符号。<br>        &#x2F;&#x2F; 价值0如果x &#x3D;&#x3D; y ; 如果x &lt; y为无符号值，则小于0 ; 如果x &gt; y为无符号值，则值大于0<br>        System.out.println(Integer.compareUnsigned(5, 8));<br>        System.out.println(Integer.compareUnsigned(8, 8));<br>        System.out.println(Integer.compareUnsigned(8, 5));<br>    }</p>
+<h1 id="Integer-byteValue-用对象名调用"><a href="#Integer-byteValue-用对象名调用" class="headerlink" title="Integer.byteValue() ,用对象名调用"></a>Integer.byteValue() ,用对象名调用</h1><p>将Integer类变为byte类<br>        &#x2F;&#x2F; 返回此值 Integer为 byte的基本收缩转换后。也就是说，这个by值必须是Integer类型的<br>        Integer integer &#x3D; 3;<br>        byte by &#x3D; integer.byteValue();<br>        &#x2F;&#x2F; System.out.println(by);</p>
+<h1 id="Integer-decode-“-“-，对象调用"><a href="#Integer-decode-“-“-，对象调用" class="headerlink" title="Integer.decode(“ “) ，对象调用"></a>Integer.decode(“ “) ，对象调用</h1><p>&#x2F;&#x2F;将 String解码成 Integer 。<br>        Integer llInteger&#x3D;new Integer(28);<br>        System.out.println(llInteger.decode(“22”));&#x2F;&#x2F;对象去调用decode方法</p>
+<h1 id="Integer-divideUnsigned-int，int"><a href="#Integer-divideUnsigned-int，int" class="headerlink" title="Integer.divideUnsigned(int，int)"></a>Integer.divideUnsigned(int，int)</h1><p>&#x2F;&#x2F;		&#x2F;&#x2F;返回将第一个参数除以秒的无符号商，其中每个参数和结果被解释为无符号值。<br>&#x2F;&#x2F;		System.out.println(Integer.divideUnsigned(8, 2));</p>
+<h1 id="Integer-equals"><a href="#Integer-equals" class="headerlink" title="Integer.equals()"></a>Integer.equals()</h1><pre><code>    //equals(Object obj) 将此对象与指定的对象进行比较。
+    Integer ll=new Integer(22);
+    Integer ql=new Integer(11);
+    System.out.println(new Integer(22).equals(new Integer(11)));//返回值为true和false
+</code></pre>
+<h1 id="Integer-getInteger-String"><a href="#Integer-getInteger-String" class="headerlink" title="Integer.getInteger(String)"></a>Integer.getInteger(String)</h1><pre><code>    //getInteger(String nm) 确定具有指定名称的系统属性的整数值。
+    Integer integer2=new Integer(66);
+    //System.out.println(integer2.getInteger(&quot;integer2&quot;));
+    
+</code></pre>
+<h1 id="Integer-getInteger-String-int"><a href="#Integer-getInteger-String-int" class="headerlink" title="Integer.getInteger(String,int)"></a>Integer.getInteger(String,int)</h1><pre><code>    //getInteger(String nm, int val) 确定具有指定名称的系统属性的整数值。 
+    //第一个参数被视为系统属性的名称。第二个参数是默认值。 如果没有指定名称的属性，如果该属性没有正确的数字格式，或者指定的名称为空或null ，则返回表示第二个参数的值的Integer对象。 
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,0));//就等于下面
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,new Integer(0)));
+</code></pre>
+<h1 id="Integer-getInteger-String-Integer"><a href="#Integer-getInteger-String-Integer" class="headerlink" title="Integer.getInteger(String,Integer)"></a>Integer.getInteger(String,Integer)</h1><pre><code>    //getInteger(String nm, Integer val) 返回具有指定名称的系统属性的整数值。 
+    System.out.println(new Integer(22).getInteger(&quot;&quot;, 33));//就等于下面那个
+    System.out.println(new Integer(2).getInteger(&quot;22&quot;,new Integer(0)));
+</code></pre>
+<h1 id="Integer-hashCode"><a href="#Integer-hashCode" class="headerlink" title="Integer.hashCode()"></a>Integer.hashCode()</h1><pre><code>    //hashCode() 返回这个 Integer的哈希码。 
+    System.out.println(new Integer(56).hashCode());
+</code></pre>
+<h1 id="Integer-hashCode-int"><a href="#Integer-hashCode-int" class="headerlink" title="Integer.hashCode(int)"></a>Integer.hashCode(int)</h1><pre><code>    //hashCode(int value) 返回值为int的哈希码; 兼容Integer.hashCode() 。
+    System.out.println(new Integer(&quot;99&quot;).hashCode(33));
+
+    /*
+     * 在Java中，哈希码代表了对象的一种特征，例如我们判断某两个字符串是否==，如果其哈希码相等，则这两个字符串是相等的。其次，哈希码是一种数据结构的算法。常见的哈希码的算法有：
+        1：Object类的hashCode.返回对象的内存地址经过处理后的结构，由于每个对象的内存地址都不一样，所以哈希码也不一样。
+        2：String类的hashCode.根据String类包含的字符串的内容，根据一种特殊算法返回哈希码，只要字符串内容相同，返回的哈希码也相同。
+        3：Integer类，返回的哈希码就是Integer对象里所包含的那个整数的数值，例如Integer i1=new Integer(100),i1.hashCode的值就是100 。由此可见，2个一样大小的Integer对象，返回的哈希码也一样。
+     * 
+     */
+    
+</code></pre>
+<h1 id="Integer-highestOneBit-int-i-对象名调用"><a href="#Integer-highestOneBit-int-i-对象名调用" class="headerlink" title="Integer.highestOneBit(int i) ,对象名调用"></a>Integer.highestOneBit(int i) ,对象名调用</h1><pre><code>    //highestOneBit(int i) 
+    //返回一个 int值与至多一个单个1位，在最高阶（“最左侧”）的位置在指定的一个位 int值。 
+    //这个函数的作用是取 i 这个数的二进制形式最左边的最高一位且高位后面全部补零，最后返回int型的结果。
+    Integer ioInteger = 12;
+    System.out.println(ioInteger.highestOneBit(13));
+    
+</code></pre>
+<h1 id="Integer-intValue"><a href="#Integer-intValue" class="headerlink" title="Integer.intValue()"></a>Integer.intValue()</h1><pre><code>    //intValue() 将 Integer的值作为 int 。 
+    System.out.println(new Integer(9).intValue());//该对象在转换为 int之后表示的 int 。
+    
+</code></pre>
+<h1 id="Integer-max-int-int"><a href="#Integer-max-int-int" class="headerlink" title="Integer.max(int,int)"></a>Integer.max(int,int)</h1><pre><code>    //max(int a, int b) 返回两个 int的较大值，就像调用 Math.max一样 。 
+    System.out.println(new Integer(1).max(2, 3));//返回max中最大的值
+</code></pre>
+<h1 id="Integer-min-int-int"><a href="#Integer-min-int-int" class="headerlink" title="Integer.min(int,int)"></a>Integer.min(int,int)</h1><pre><code>    //min(int a, int b) 返回两个 int的较小值，就像调用 Math.min一样 。
+    System.out.println(new Integer(1).min(2, 3));
+    
+</code></pre>
+<h1 id="Integer-parseInt-String-s"><a href="#Integer-parseInt-String-s" class="headerlink" title="Integer.parseInt(String s)"></a>Integer.parseInt(String s)</h1><pre><code>    //parseInt(String s) 将字符串参数解析为带符号的十进制整数。默认是十进制 
+    System.out.println(new Integer(55).parseInt(&quot;+110&quot;));
+    System.out.println(new Integer(55).parseInt(&quot;-110&quot;));//由参数以十进制表示的整数值
+    
+</code></pre>
+<h1 id="Integer-parseInt-String-int"><a href="#Integer-parseInt-String-int" class="headerlink" title="Integer.parseInt(String ,int)"></a>Integer.parseInt(String ,int)</h1><pre><code>    //parseInt(String s, int radix) 将字符串参数解析为第二个参数指定的基数中的有符号整数。
+    /*
+     * 方法parseInt(String s,int radix)的目的是输出一个十进制数，这个数字是“String s”但是我们要知道他是多少进制的，而方法中“int radix”参数正是来表达这个信息的。 
+        比如：parseInt(1010,2) 
+        意思就是：输出2进制数1010在十进制下的数.
+        radix的范围是在2~36之间，超出范围会抛异常。其中s的长度也不能超出7，否则也会抛异常。  
+     * 
+     */
+    System.out.println(new Integer(9).parseInt(&quot;111&quot;, 11));
+    
+</code></pre>
+<p>&#x2F;&#x2F;parseUnsignedInt(String s) 将字符串参数解析为无符号十进制整数。默认是十进制输出<br>        System.out.println(new Integer(1).parseUnsignedInt(“10110”));<br>         &#x2F;&#x2F;parseInt(String s, int radix) 将字符串参数解析为第二个参数指定的基数中的有符号整数。<br>        System.out.println(new Integer(1).parseUnsignedInt(“10110”,10));</p>
+<p>&#x2F;&#x2F;		&#x2F;&#x2F;remainderUnsigned(int dividend, int divisor)<br>&#x2F;&#x2F;		&#x2F;&#x2F;返回无符号余数，将第一个参数除以秒，其中每个参数和结果被解释为无符号值。<br>&#x2F;&#x2F;		System.out.println(new Integer(1).remainderUnsigned(200, 300));<br>&#x2F;&#x2F;		System.out.println(new Integer(1).remainderUnsigned(20, 30));</p>
+<p>&#x2F;&#x2F;		&#x2F;&#x2F;vreverse(int i) 返回由指定的二进制补码表示反转位的顺序而获得的值 int值。i - 要反转的值<br>&#x2F;&#x2F;		System.out.println(new Integer(10).reverse(3));<br>&#x2F;&#x2F;		&#x2F;&#x2F;reverseBytes(int i) 返回反转指定的二进制补码表示的字节顺序而获得的值 int值。i - 要颠倒其字节的值<br>&#x2F;&#x2F;		System.out.println(new Integer(500).reverseBytes(3));</p>
+<pre><code>    //shortValue() 返回此值 Integer为 short的基本收缩转换后。
+    System.out.println(new Integer(12).shortValue());
+    Integer jk=12;
+    //Integer jk1=jk.shortValue();转化后的值的类型为short
+    
+    //signum(int i) 返回指定的 int值的 int函数。 
+    //返回指定的int值的signum函数。 （如果指定的值为负，返回值为-1;如果指定的值为零，返回值为0;如果指定的值为正，返回值为1）。 
+    System.out.println(new Integer(12).signum(-12));
+    System.out.println(new Integer(12).signum(12));
+    System.out.println(new Integer(12).signum(0));
+    
+    //sum(int a, int b) 根据+运算符将两个整数相加。 
+    System.out.println(new Integer(0).sum(1, 2));
+    
+    //toBinaryString(int i) 在基数2中返回整数参数的字符串表示形式为无符号整数。
+    //如果整型变量为负，这个变量加上二百三十二就是实际储存的二进制；如果整型变量为正，这个变量的二进制就是实际存储的二进制．然后，从左到右扫描入字符串中．如果无符号值为零，它就只用一个零来表示；否则的话，无符号字符串第一位不用零来表示．二进制表中只用0和1.
+    System.out.println(new Integer(0).toBinaryString(1));
+    System.out.println(new Integer(0).toBinaryString(-333));
+    System.out.println(new Integer(0).toBinaryString(0));
+    
+    //toHexString(int i) 返回整数参数的字符串表示形式，作为16位中的无符号整数。 
+    //说简单点，就是十进制转化为十六进制
+    System.out.println(new Integer(0).toHexString(1));
+    System.out.println(new Integer(0).toHexString(-333));
+    System.out.println(new Integer(0).toHexString(0));
+    
+    //toOctalString(int i) 在基数8中返回整数参数的字符串表示形式为无符号整数。
+    //由参数以八进制输出
+    System.out.println(new Integer(0).toOctalString(1));
+    System.out.println(new Integer(0).toOctalString(-333));
+    System.out.println(new Integer(0).toOctalString(0));
+    
+    //toString(int i)  返回 String表示此对象 Integer的价值。 
+    System.out.println(new Integer(0).toString(33));
+    System.out.println(new Integer(0).toString(22));
+    
+    //toString(int i, int radix) 返回由第二个参数指定的基数中的第一个参数的字符串表示形式。 
+    System.out.println(new Integer(0).toString(33,4));//第二个参数是直接基数返回
+    System.out.println(new Integer(0).toString(22,10));
+    
+    //toUnsignedLong(int x) 参数给转换 long由无符号转换。
+    System.out.println(new Integer(0).toUnsignedLong(22));
+    System.out.println(new Integer(0).toUnsignedLong(0));
+    System.out.println(new Integer(0).toUnsignedLong(-22));
+    //toUnsignedString(int i) 将参数的字符串表示形式返回为无符号十进制值。 
+    System.out.println(new Integer(1).toUnsignedString(22));
+    System.out.println(new Integer(2).toUnsignedString(0));
+    System.out.println(new Integer(3).toUnsignedString(-22));
+    //toUnsignedString(int i, int radix) 	以第二个参数指定的基数中的无符号整数值返回第一个参数的字符串表示形式。 
+    System.out.println(new Integer(1).toUnsignedString(22,2));
+    System.out.println(new Integer(2).toUnsignedString(0,10));
+    System.out.println(new Integer(3).toUnsignedString(-22,8));
+    
+    //valueOf(int i) 返回一个 Integer指定的 int值的 Integer实例。
+    System.out.println(new Integer(111).valueOf(11));
+    System.out.println(new Integer(111).valueOf(-11));
+    System.out.println(new Integer(111).valueOf(0));
+    
+    //valueOf(String s) 返回一个 Integer对象，保存指定的值为 String 。
+    System.out.println(new Integer(111).valueOf(&quot;99&quot;));
+    System.out.println(new Integer(111).valueOf(&quot;88&quot;));
+    System.out.println(new Integer(111).valueOf(&quot;-12&quot;));
+    
+    //valueOf(String s, int radix) 返回一个 Integer对象，保存从指定的String中 String的值，当用第二个参数给出的基数进行解析时。 
+    //返回第二个参数指定的技术进行解析
+    System.out.println(new Integer(111).valueOf(&quot;99&quot;,10));
+    System.out.println(new Integer(111).valueOf(&quot;88&quot;,11));
+    System.out.println(new Integer(111).valueOf(&quot;-12&quot;,10));
+</code></pre>
+<h1 id="2、public-static-int-parseInt-String-s"><a href="#2、public-static-int-parseInt-String-s" class="headerlink" title="2、public static int parseInt(String s)"></a>2、public static int parseInt(String s)</h1><p>将字符串转换成整数。</p>
+<p>int b1 &#x3D; Integer.parseInt(“123”);<br>        System.out.println(b1);  &#x2F;&#x2F;123</p>
+<pre><code>    //int b2 = Integer.parseInt(&quot;3.14&quot;);  //异常：java.lang.NumberFormatException，数字格式化异常
+    //int b3 = Integer.parseInt(&quot;123abc&quot;);  //异常：java.lang.NumberFormatException
+    //int b4 = Integer.parseInt((&quot;abc123&quot;));  //异常：java.lang.NumberFormatException
+</code></pre>
+<h1 id="3、public-static-String-toBinaryString-int-i"><a href="#3、public-static-String-toBinaryString-int-i" class="headerlink" title="3、public static String toBinaryString(int i)"></a>3、public static String toBinaryString(int i)</h1><p>将一个正整数转换成2进制字符串。</p>
+<p> String c1 &#x3D; Integer.toBinaryString(3);<br>        System.out.println(c1);  &#x2F;&#x2F; 11</p>
+<h1 id="public-static-String-toOctalString-int-i"><a href="#public-static-String-toOctalString-int-i" class="headerlink" title="public static String toOctalString(int i)"></a>public static String toOctalString(int i)</h1><p>将一个正整数转换成8进制字符串。</p>
+<p> String c2 &#x3D; Integer.toOctalString(9);<br>        System.out.println(c2);  &#x2F;&#x2F;11</p>
+<h1 id="public-static-String-toHexString-int-i"><a href="#public-static-String-toHexString-int-i" class="headerlink" title="public static String toHexString(int i)"></a>public static String toHexString(int i)</h1><p>将一个正整数转换成16进制字符串。</p>
+<p> String c3 &#x3D; Integer.toHexString(10);<br>        System.out.println(c3);  &#x2F;&#x2F; a</p>
+<h1 id="public-static-String-toUnsignedString-int-i-int-radix"><a href="#public-static-String-toUnsignedString-int-i-int-radix" class="headerlink" title="public static String toUnsignedString(int i, int radix)"></a>public static String toUnsignedString(int i, int radix)</h1><p>将一个正整数转换成r进制字符串（r的范围是[2, 64]）。</p>
+<p>String c4 &#x3D; Integer.toUnsignedString(11, 16);<br>        System.out.println(c4);  &#x2F;&#x2F; b</p>
+<h1 id="4、public-static-Integer-valueOf-int-i"><a href="#4、public-static-Integer-valueOf-int-i" class="headerlink" title="4、public static Integer valueOf(int i)"></a>4、public static Integer valueOf(int i)</h1><p>将一个整数转换成Integer类型对象，即装箱。</p>
+<p> Integer d1 &#x3D; Integer.valueOf(100);<br>        System.out.println(d1);  &#x2F;&#x2F;100</p>
+<h1 id="public-static-Integer-valueOf-String-s"><a href="#public-static-Integer-valueOf-String-s" class="headerlink" title="public static Integer valueOf(String s)"></a>public static Integer valueOf(String s)</h1><p>将字符串数字转换成Integer类型对象，也是装箱。</p>
+<p>  Integer d2 &#x3D; Integer.valueOf(“200”);<br>        System.out.println(d2);  &#x2F;&#x2F;200</p>
+
+        </article>
+
+        
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/java%E7%BC%96%E7%A8%8B%E6%96%B9%E6%B3%95/">java编程方法</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Java/" rel="tag">Java</a>
+    
+</div>
+
+    <div class="nexmoe-post-footer">
+        <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://lib.baomitu.com/valine/1.3.9/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'r5zxC0st0DDjPA9auXzMV7HY-gzGzoHsz',
+        appKey: '3bqCsovpyfTPHUzTHovd3V3V'
+    })
+</script>
+</section>
+    </div>
+</div>
+
+
+        <div class="nexmoe-post-right">
+          
+            <div class="nexmoe-fixed">
+              <div class="nexmoe-tool">
+                <a href="#" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+  <div id="nexmoe-pendant">
+    <div class="nexmoe-drawer mdui-drawer nexmoe-pd" id="drawer">
+        
+            <div class="nexmoe-pd-item">
+                <div class="clock">
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="memory"></div>
+        <div class="needle" id="hours"></div>
+        <div class="needle" id="minutes"></div>
+        <div class="needle" id="seconds"></div>
+        <div class="clock_logo">
+
+        </div>
+
+    </div>
+<style>
+    .clock {
+        background-color: #ffffff;
+        width: 70vw;
+        height: 70vw;
+        max-width: 70vh;
+        max-height: 70vh;
+        border: solid 2.8vw #242424;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 0 1.4vw 2.8vw rgba(0, 0, 0, 0.8);
+        zoom:0.2
+    }
+
+    .memory {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+
+    .memory:nth-child(1) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(0deg) translateY(-520%);
+    }
+
+    .memory:nth-child(2) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(6deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(3) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(12deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(4) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(18deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(5) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(24deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(6) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(30deg) translateY(-520%);
+    }
+
+    .memory:nth-child(7) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(36deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(8) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(42deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(9) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(48deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(10) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(54deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(11) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(60deg) translateY(-520%);
+    }
+
+    .memory:nth-child(12) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(66deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(13) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(72deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(14) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(78deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(15) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(84deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(16) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(90deg) translateY(-520%);
+    }
+
+    .memory:nth-child(17) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(96deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(18) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(102deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(19) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(108deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(20) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(114deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(21) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(120deg) translateY(-520%);
+    }
+
+    .memory:nth-child(22) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(126deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(23) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(132deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(24) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(138deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(25) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(144deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(26) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(150deg) translateY(-520%);
+    }
+
+    .memory:nth-child(27) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(156deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(28) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(162deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(29) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(168deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(30) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(174deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(31) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-520%);
+    }
+
+    .memory:nth-child(32) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(186deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(33) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(192deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(34) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(198deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(35) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(204deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(36) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(210deg) translateY(-520%);
+    }
+
+    .memory:nth-child(37) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(216deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(38) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(222deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(39) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(228deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(40) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(234deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(41) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(240deg) translateY(-520%);
+    }
+
+    .memory:nth-child(42) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(246deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(43) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(252deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(44) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(258deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(45) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(264deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(46) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(270deg) translateY(-520%);
+    }
+
+    .memory:nth-child(47) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(276deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(48) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(282deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(49) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(288deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(50) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(294deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(51) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(300deg) translateY(-520%);
+    }
+
+    .memory:nth-child(52) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(306deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(53) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(312deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(54) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(318deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(55) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(324deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(56) {
+        background-color: #424242;
+        width: 2%;
+        height: 8%;
+        transform: translate(-50%, -50%) rotate(330deg) translateY(-520%);
+    }
+
+    .memory:nth-child(57) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(336deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(58) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(342deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(59) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(348deg) translateY(-1461%);
+    }
+
+    .memory:nth-child(60) {
+        background-color: #949494;
+        width: 1%;
+        height: 3%;
+        transform: translate(-50%, -50%) rotate(354deg) translateY(-1461%);
+    }
+
+    .needle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+
+    .needle#hours {
+        background-color: #1f1f1f;
+        width: 4%;
+        height: 30%;
+        transform-origin: center 75%;
+        transform: translate(-50%, -75%);
+    }
+
+    .needle#hours.moving {
+        transition: transform 150ms ease-out;
+    }
+
+    .needle#hours:after {
+        content: '';
+        background-color: #1f1f1f;
+        width: 4vw;
+        height: 4vw;
+        max-width: 4vh;
+        max-height: 4vh;
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .needle#minutes {
+        background-color: #1f1f1f;
+        width: 2%;
+        height: 45%;
+        transform-origin: center 75%;
+        transform: translate(-50%, -75%);
+    }
+
+    .needle#minutes.moving {
+        transition: transform 150ms ease-out;
+    }
+
+    .needle#minutes:after {
+        content: '';
+        background-color: #1f1f1f;
+        width: 4vw;
+        height: 4vw;
+        max-width: 4vh;
+        max-height: 4vh;
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .needle#seconds {
+        background-color: #cb2f2f;
+        width: 1%;
+        height: 50%;
+        transform-origin: center 75%;
+        transform: translate(-50%, -75%);
+    }
+
+    .needle#seconds.moving {
+        transition: transform 150ms ease-out;
+    }
+
+    .needle#seconds:after {
+        content: '';
+        background-color: #cb2f2f;
+        width: 2.5vw;
+        height: 2.5vw;
+        max-width: 2.5vh;
+        max-height: 2.5vh;
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .clock_logo{
+        width: 10vw;
+        height: 10vw;
+        max-width: 10vh;
+        max-height: 10vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    @media (min-width: 100vh) {
+        .clock {
+            border: solid 2.8vh #242424;
+            box-shadow: 0 1.4vh 2.8vh rgba(0, 0, 0, 0.8);
+        }
+    }
+
+</style>
+
+
+
+
+
+            </div>
+        
+            <div class="nexmoe-pd-item">
+                <div class="qweather" >
+    <div id="he-plugin-standard"></div>
+    <div class="qweather-logo">
+
+    </div>
+
+</div>
+<style>
+    .qweather{
+        position: relative;
+    }
+    .qweather-logo{
+        position: absolute;
+        right: 0;
+        top: -15px;
+        width: 40px;
+        height: 40px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+<script>
+  WIDGET = {
+    "CONFIG": {
+      "layout": "2",
+      "width": "260",
+      "height": "220",
+      "background": "5",
+      "dataColor": "e67249",
+      "borderRadius": "15",
+      "key": "f74d1e1690e6432d801e97fa2f05a162"
+    }
+  }
+</script>
+<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+
+            </div>
+        
+</div>
+<style>
+    .nexmoe-pd {
+        left: auto;
+        top: 40px;
+        right: 0;
+    }
+    .nexmoe-pd-item{
+       display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+</style>
+
+  </div>
+  <script src="https://lib.baomitu.com/lazysizes/5.1.0/lazysizes.min.js"></script>
+<script src="https://lib.baomitu.com/highlight.js/10.0.0/highlight.min.js"></script>
+<script src="https://lib.baomitu.com/mdui/0.4.3/js/mdui.min.js"></script>
+
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+
+<script src="https://lib.baomitu.com/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="/lib/fancybox/js/jquery.fancybox.min.js"></script>
+
+
+<script src="/js/app.js?v=1694887031798"></script>
+
+<script src="https://lib.baomitu.com/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+  
+
+
+
+
+
+<!-- hexo injector body_end start -->
+<script src="https://lib.baomitu.com/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+<script src="/lib/codeBlock/codeBlockFuction.js"></script>
+
+<script src="/lib/codeBlock/codeLang.js"></script>
+
+<script src="/lib/codeBlock/codeCopy.js"></script>
+
+<script src="/lib/codeBlock/codeShrink.js"></script>
+
+<link rel="stylesheet" href="/lib/codeBlock/matery.css">
+
+<script src="/js/webapp.js"></script>
+
+<script src="/js/clock.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script src="/js/search.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>
+
